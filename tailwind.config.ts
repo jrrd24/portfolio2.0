@@ -6,17 +6,21 @@ const config: Config = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode:'class',
   theme: {
     extend: {
-      
+      backgroundImage: {
+        'radial-circle': 'radial-gradient(circle at center, var(--tw-gradient-stops))',
+      },
     },
     colors: {
+      'transparent':'transparent',
       'custom-white':{
         DEFAULT:'#F8F8FF',
         dark:'#E3E3E3'
       },
       'custom-dark':{
-        light:'#353537',
+        light:'#181818',
         DEFAULT:'#1B1B1F',
       },
       'custom-orange':{
