@@ -3,6 +3,7 @@ import Hero from "./sections/Hero";
 import Projects from "./sections/Projects";
 import { ThemeProvider } from "next-themes";
 import DarkModeButton from "./components/DarkModeButton";
+import Navbar from "./components/Navbar";
 
 export const metadata: Metadata = {
   title: "Jerard Pagalilauan | Home",
@@ -11,14 +12,14 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <ThemeProvider attribute="class">
-      <main className="flex flex-col items-center select-text scroll-smooth relative bg-custom-white dark:bg-custom-dark overflow-x-hidden text-custom-dark dark:text-custom-white ">
-        <DarkModeButton />
+      <main
+        className="flex flex-col items-center select-text scroll-smooth relative
+        bg-gradient-to-tr from-slate-300 to-custom-white  dark:from-slate-900 dark:to-zinc-950  
+        overflow-x-hidden  text-custom-dark dark:text-custom-white font-poppins "
+      >
+        <Navbar />
         <Hero />
         <Projects />
-
-        <section className="min-h-screen container">hellooooo</section>
-
-        <section className="min-h-screen">hellooooo</section>
       </main>
     </ThemeProvider>
   );
