@@ -4,13 +4,13 @@ type Props = {};
 
 function Sidebar({}: Props) {
   return (
-    <div className="sidebar flex fixed invisible lg:visible">
+    <div className="sidebar w-[90vh] h-[60px] origin-bottom-right right-0 bottom-full flex fixed invisible lg:visible">
       <ul className="h-fit flex gap-6 rotate-180 font-semibold select-none [&_a]:hover:cursor-pointer">
         <li>
-          <a>Home</a>
+          <a href="#">Home</a>
         </li>
         <li>
-          <a>Projects</a>
+          <a href="#projects">Projects</a>
         </li>
         <li>
           <a>About</a>

@@ -16,6 +16,10 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(to bottom,
@@ -104,10 +108,5 @@ body {
 }
 
 .sidebar {
-  width: 90vh;
-  height: 60px;
-  transform-origin: bottom right;
-  right: 0;
-  bottom: 100%;
   transform: rotate(-90deg);
 }

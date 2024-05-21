@@ -9,11 +9,12 @@ function Hero({}: Props) {
     <section className="min-h-screen relative container flex items-center h-screen w-full select-none">
       {/* Top Circle */}
       <div
-        className="rounded-full bg-radial-circle from-custom-orange/50  dark:from-custom-orange/40 from-0% via-custom-orange/40  dark:via-custom-orange/30 
-        via-25% dark:to-transparent to-70%  h-96 w-96 xl:h-[32rem] md:h-[24rem] xl:w-[36rem] md:w-[24rem] blur-3xl absolute 
+        className="rounded-full bg-radial-circle from-custom-orange/50  dark:from-custom-orange/40 from-0% via-custom-orange/40  dark:via-custom-orange/30
+        via-25% dark:to-transparent to-70%  h-96 w-96 xl:h-[32rem] md:h-[24rem] xl:w-[36rem] md:w-[24rem] blur-3xl absolute
         top-[-16rem]  right-[-6rem]  lg:right-[6rem] overflow-x-hidden"
       />
 
+      {/* Content*/}
       <div className="  px-8 w-full lg:h-[85vh] h-[75vh] mt-16 flex justify-between flex-col z-10">
         <div>
           <div className=" font-bold text-4xl md:text-6xl lg:text-8xl ">
@@ -22,7 +23,7 @@ function Hero({}: Props) {
           </div>
 
           <div
-            className="w-[75vw] md:w-[50vw] mt-3 md:mt-6  text-custom-dark-light dark:text-custom-white-dark/60 inline-flex 
+            className="w-[75vw] md:w-[50vw] mt-3 md:mt-6  text-custom-dark-light dark:text-custom-white-dark/60 inline-flex
             flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]
             text-base lg:text-lg"
           >
@@ -51,7 +52,7 @@ function Hero({}: Props) {
 
         <div className="flex justify-end">
           <div
-            className="font-bold text-5xl md:text-7xl  lg:text-9xl h-28 md:h-48 lg:h-72  text-right w-fit bg-clip-text 
+            className="font-bold text-5xl md:text-7xl  lg:text-9xl h-28 md:h-48 lg:h-72  text-right w-fit bg-clip-text
             text-transparent bg-gradient-flow bg-[length:200%_auto] animate-gradient"
           >
             Jerard <br />
