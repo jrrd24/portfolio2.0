@@ -1,6 +1,8 @@
 import React from "react";
 import ProjectContainer from "../components/ProjectContainer";
 import Image from "next/image";
+import { useTheme } from "next-themes";
+import SectionNameImage from "../components/SectionNameImage";
 
 type Props = {};
 
@@ -15,11 +17,9 @@ function Hero({}: Props) {
 
       <div className="px-8 grid grid-cols-12 gap-0 w-screen container">
         <div className="sticky top-0 h-screen flex items-center w-48 md:col-start-1 md:col-end-3">
-          <Image
-            src={"/assets/section_wordmark/projects.svg"}
-            width={100}
-            height={50}
-            alt="projects"
+          <SectionNameImage
+            lightImage="/assets/section_wordmark/projects_dark.svg"
+            darkImage="/assets/section_wordmark/projects.svg"
           />
         </div>
 
