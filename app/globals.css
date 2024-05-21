@@ -102,3 +102,12 @@ body {
   background-color: #E96479;
   box-shadow: none;
 }
+
+.sidebar {
+  width: 90vh;
+  height: 60px;
+  transform-origin: bottom right;
+  right: 0;
+  bottom: 100%;
+  transform: rotate(-90deg);
+}

@@ -12,34 +12,16 @@ export default function DarkModeButton() {
 
   return (
     mounted && (
-      <>
-        {/* <button
-          type="button"
-          className="bg-gray-200 hover:bg-gray-300 dark:bg-gray-800  dark:hover:bg-gray-700 transition-all rounded flex items-center justify-center h-7 w-7"
-          aria-label={
-            theme === "dark" ? "Toggle light mode" : "Toggle dark mode"
-          }
-          onClick={() => {
+      <label className="switch">
+        <input
+          type="checkbox"
+          onChange={() => {
             setTheme(theme === "dark" ? "light" : "dark");
           }}
-        >
-          {theme === "dark" ? (
-            <SunIcon className={styles} />
-          ) : (
-            <MoonIcon className={styles} />
-          )}
-        </button> */}
-        <label className="switch">
-          <input
-            type="checkbox"
-            onChange={() => {
-              setTheme(theme === "dark" ? "light" : "dark");
-            }}
-            checked={theme !== "dark"}
-          />
-          <span className="slider"></span>
-        </label>
-      </>
+          checked={theme !== "dark"}
+        />
+        <span className="slider"></span>
+      </label>
     )
   );
 }
