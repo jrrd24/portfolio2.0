@@ -20,13 +20,14 @@ export default function Home() {
       >
         <Navbar />
         <div className="grid lg:grid-cols-2 w-screen ">
-          <div className=" w-full lg:col-start-1 lg:col-span-11 lg:col-end-11 flex flex-col items-center ">
+          <div className=" w-full lg:col-start-1  lg:col-span-11 2xl:col-span-12 lg:col-end-11 2xl:col-end-12 flex flex-col items-center justify-items-center">
             <Hero />
             <Projects />
           </div>
-          <div className=" text-custom-white lg:col-start-11 lg:col-end-12 w-20 h-screen" />
+          <div className="lg:col-start-11 lg:col-end-12 w-20 h-screen">
+            <Sidebar />
+          </div>
         </div>
-        <Sidebar />
       </main>
     </ThemeProvider>
   );

@@ -22,7 +22,7 @@ function Hero({}: Props) {
           </div>
 
           <div
-            className="w-[75vw] md:w-[50vw] mt-8 text-custom-dark-light dark:text-custom-white-dark/60 inline-flex 
+            className="w-[75vw] md:w-[50vw] mt-3 md:mt-6  text-custom-dark-light dark:text-custom-white-dark/60 inline-flex 
             flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]
             text-base lg:text-lg"
           >

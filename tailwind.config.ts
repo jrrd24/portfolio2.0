@@ -13,6 +13,7 @@ const config: Config = {
         'radial-circle': 'radial-gradient(circle at center, var(--tw-gradient-stops))',
         'gradient-flow': 'linear-gradient(to right, #F3A07D, #E96479, #7D6188, #7D6188, #E96479, #F3A07D)'
       },
+
       colors: {
         'transparent':'transparent',
         'custom-white':{
@@ -56,6 +57,10 @@ const config: Config = {
           to: { transform: 'translateX(-100%)' },
         }
       },
+
+      screens:{
+        '2xl': '1400px',
+      }
     },
    
   },
