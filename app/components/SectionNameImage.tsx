@@ -6,6 +6,8 @@ import React, { useEffect, useState } from "react";
 type Props = {
   darkImage: string;
   lightImage: string;
+  width: number;
+  height: number;
 };
 
 const SectionNameImage = (props: Props) => {
@@ -17,9 +19,10 @@ const SectionNameImage = (props: Props) => {
     mounted && (
       <Image
         src={theme === "dark" ? props.darkImage : props.lightImage}
-        width={100}
-        height={50}
+        width={props.width}
+        height={props.height}
         alt="projects"
+        // style={{ width: "auto", height: "auto" }}
       />
     )
   );
