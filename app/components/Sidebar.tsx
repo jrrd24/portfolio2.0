@@ -7,7 +7,7 @@ function Sidebar({}: Props) {
     <div className="sidebar w-[90vh] h-[60px] origin-bottom-right right-0 bottom-full flex fixed invisible lg:visible">
       <ul className="h-fit flex gap-6 rotate-180 font-semibold select-none [&_a]:hover:cursor-pointer">
         <li>
-          <a href="#">Home</a>
+          <a href="#home">Home</a>
         </li>
         <li>
           <a href="#projects">Projects</a>

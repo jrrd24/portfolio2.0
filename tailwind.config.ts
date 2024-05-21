@@ -60,6 +60,10 @@ const config: Config = {
 
       screens:{
         '2xl': '1400px',
+      },
+
+      letterSpacing: {
+        tightest: '-.099em',
       }
     },
    
