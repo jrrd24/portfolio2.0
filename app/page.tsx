@@ -16,11 +16,14 @@ export default function Home() {
       <main
         className="select-text scroll-smooth relative
         bg-gradient-to-tr from-slate-300 to-custom-white  dark:from-slate-900 dark:to-zinc-950  
-        overflow-x-hidden  text-custom-dark dark:text-custom-white font-poppins "
+        h-screen overflow-x-hidden text-custom-dark dark:text-custom-white font-poppins "
       >
         <Navbar />
         <div className="grid lg:grid-cols-2 w-screen ">
-          <div className=" w-full lg:col-start-1  lg:col-span-11 2xl:col-span-12 lg:col-end-11 2xl:col-end-12 flex flex-col items-center justify-items-center">
+          <div
+            className=" w-full lg:col-start-1  lg:col-span-11 2xl:col-span-12 lg:col-end-11 2xl:col-end-12 
+            flex flex-col items-center justify-items-center"
+          >
             <Hero />
             <Projects />
           </div>
