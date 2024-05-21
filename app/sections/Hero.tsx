@@ -6,7 +6,7 @@ type Props = {};
 
 function Hero({}: Props) {
   return (
-    <section className="min-h-screen relative container flex items-center h-screen">
+    <section className="min-h-screen relative container flex items-center h-screen select-none">
       {/* Top Circle */}
       <div
         className="rounded-full bg-radial-circle from-custom-orange/50  dark:from-custom-orange/40 from-0% via-custom-orange/40  dark:via-custom-orange/30 
@@ -50,7 +50,10 @@ function Hero({}: Props) {
         </div>
 
         <div className="flex justify-end">
-          <div className="font-bold text-5xl md:text-7xl  lg:text-9xl h-28 md:h-48 lg:h-72  text-right w-fit bg-clip-text text-transparent bg-gradient-flow bg-[length:200%_auto] animate-gradient">
+          <div
+            className="font-bold text-5xl md:text-7xl  lg:text-9xl h-28 md:h-48 lg:h-72  text-right w-fit bg-clip-text 
+            text-transparent bg-gradient-flow bg-[length:200%_auto] animate-gradient"
+          >
             Jerard <br />
             Pagalilauan
           </div>
