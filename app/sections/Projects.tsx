@@ -3,6 +3,7 @@ import ProjectContainer from "../components/ProjectContainer";
 import Image from "next/image";
 import { useTheme } from "next-themes";
 import SectionNameImage from "../components/SectionNameImage";
+import ProjectsData from "../data/ProjectsData";
 
 type Props = {};
 
@@ -15,33 +16,32 @@ function Hero({}: Props) {
          h-[64rem] w-[32rem] md:h-[64rem] md:w-[48rem] blur-3xl absolute top-[-32rem] left-[-12rem] lg:left-[0rem] "
       />
 
-      <div className="w-screen mt-48 flex justify-center xl:hidden">
+      <div className="w-screen mt-48 flex justify-center lg:hidden">
         <SectionNameImage
           lightImage="/assets/section_wordmark/projects_h_dark.svg"
           darkImage="/assets/section_wordmark/projects_h.svg"
-          width={200}
+          width={150}
           height={100}
         />
       </div>
 
-      <div className="px-8 grid grid-cols-12 gap-0 w-screen container">
-        <div className="sticky top-0 h-screen items-center w-48 lg:col-start-1 lg:col-end-3 hidden lg:flex">
+      <div className="xl:my-48 px-8 grid grid-cols-12 gap-0 w-screen container">
+        <div className="sticky top-0 h-screen items-center w-48 lg:col-start-1 lg:col-end-2 hidden lg:flex">
           <SectionNameImage
             lightImage="/assets/section_wordmark/projects_dark.svg"
             darkImage="/assets/section_wordmark/projects.svg"
-            width={100}
+            width={75}
             height={50}
           />
         </div>
 
         <div
           id="projects"
-          className="xl:my-48 md:px-8  w-full col-start-1 lg:col-start-3 col-end-13"
+          className="md:px-8  w-full col-start-1 lg:col-start-2 col-end-13"
         >
-          <ProjectContainer />
-          <ProjectContainer />
-          <ProjectContainer />
-          <ProjectContainer />
+          {ProjectsData?.sort((a, b) => a.order - b.order).map((data) => (
+            <ProjectContainer key={data.id} data={data} />
+          ))}
         </div>
       </div>
     </section>

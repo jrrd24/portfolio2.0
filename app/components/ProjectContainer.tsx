@@ -1,7 +1,30 @@
 import React from "react";
 import Tag from "./Tag";
+import TagLink from "./TagLink";
+import Image from "next/image";
+import ProjectImage from "./ProjectImage";
 
-type Props = {};
+type Props = {
+  data: Data;
+};
+
+type Data = {
+  order: number;
+  logo: string;
+  thumbnail: string;
+  title: string;
+  link?: string;
+  description: string;
+  contrastColor: string;
+  mainColor: string;
+  tags: Tags[];
+};
+
+type Tags = {
+  id: number;
+  name: string;
+  order: number;
+};
 
 const ProjectContainer = (props: Props) => {
   return (
@@ -16,33 +39,40 @@ const ProjectContainer = (props: Props) => {
           bg-gradient-to-bl  from-custom-dark-light/40 dark:from-custom-white-dark/40  to-custom-dark-light/5 
         dark:to-custom-white-dark/5 to-70% bg-clip-text text-transparent"
         >
-          01
+          {props.data.order.toString().padStart(2, "0")}
         </div>
         <div className=" grid grid-cols-4 gap-4 xl:gap-0 justify-items-center items-center z-10">
           {/**Image */}
-          <div className=" bg-slate-500 w-full xl:w-72  h-72 md:h-96 rounded-t-2xl rounded-b-none xl:rounded-2xl col-span-4 xl:col-span-2"></div>
+          <div
+            className={`bg-[${props.data.contrastColor}] w-full xl:w-72 h-72 md:h-96 rounded-t-2xl rounded-b-none xl:rounded-2xl col-span-4 xl:col-span-2`}
+          >
+            <ProjectImage
+              logo={props.data.logo}
+              thumbnail={props.data.thumbnail}
+            />
+          </div>
           {/**Content */}
           <div className="col-span-4 xl:col-span-2 px-4  pb-6 pt-2 xl:pr-16">
             {/**Title */}
             <h1 className=" font-bold text-2xl md:text-3xl xl:text-5xl ">
-              ScaleUp Solutions
+              {props.data.title}
             </h1>
+            {/**Link */}
+            <div className="mt-4 flex flex-wrap gap-2">
+              <TagLink link={props.data.link} />
+            </div>
             {/**Description */}
             <h3 className=" font-regular text-sm md:text-base mt-4 text-custom-dark-light/80 dark:text-custom-white-dark/80">
-              The company website of ScaleUp Solutions Inc, A software services
-              company that provides business solutions that scale up SME
-              digitalization to improve quality of services
+              {props.data.description}
             </h3>
 
             {/**Tags */}
             <div className="mt-6 flex flex-wrap gap-2">
-              <Tag name="ASP.net" />
-              <Tag name="HTML" />
-              <Tag name="JavaScript" />
-              <Tag name="CSS" />
-              <Tag name="Bootstrap 4.6" />
-              <Tag name="Figma" />
-              <Tag name="Swiper" />
+              {props.data.tags
+                ?.sort((a, b) => a.order - b.order)
+                .map((data) => (
+                  <Tag key={data.id} name={data.name} />
+                ))}
             </div>
           </div>
         </div>
