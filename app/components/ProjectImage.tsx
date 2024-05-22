@@ -5,6 +5,7 @@ import React, { useState } from "react";
 type Props = {
   thumbnail: string;
   logo: string;
+  contrastColor: string;
 };
 
 const ProjectImage = (props: Props) => {
@@ -23,17 +24,20 @@ const ProjectImage = (props: Props) => {
         width={911}
         height={1214}
         alt={"Thumbnail"}
-        className={`w-full xl:w-72 h-72 md:h-96 object-cover object-right-top rounded-b-none xl:rounded-2xl absolute transition-opacity ease-in-out duration-300 ${
+        className={`w-full xl:w-72 h-72 md:h-96 object-cover object-right-top rounded-b-none xl:rounded-2xl absolute transition-opacity ease-linear duration-300 ${
           isHovering ? "opacity-0" : "opacity-100"
         }`}
       />
-      <div className="px-12">
+      <div
+        className={`px-12 rounded-b-none xl:rounded-2xl`}
+        style={{ backgroundColor: `${props.contrastColor}` }}
+      >
         <Image
           src={props.logo}
           width={911}
           height={1214}
           alt={"Logo"}
-          className="w-full xl:w-72 h-72 md:h-96 object-contain rounded-b-none xl:rounded-2xl"
+          className="w-full xl:w-72 h-72 md:h-96 object-contain rounded-b-none xl:rounded-2xl "
         />
       </div>
     </div>
