@@ -2,7 +2,6 @@ import { Metadata } from "next";
 import Hero from "./sections/Hero";
 import Projects from "./sections/Projects";
 import { ThemeProvider } from "next-themes";
-import DarkModeButton from "./components/DarkModeButton";
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
 
