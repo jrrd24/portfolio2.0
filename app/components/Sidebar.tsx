@@ -13,10 +13,10 @@ function Sidebar({}: Props) {
           <a href="#projects">Projects</a>
         </li>
         <li>
-          <a>About</a>
+          <a href="#about">About</a>
         </li>
         <li>
-          <a>Content</a>
+          <a href="#contact">Contact</a>
         </li>
       </ul>
     </div>

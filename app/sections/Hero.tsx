@@ -17,7 +17,7 @@ function Hero({}: Props) {
       {/* Content*/}
       <div className=" px-8 w-full lg:h-[85vh] h-[75vh] max-h-[1024px] mt-16 flex justify-between flex-col z-10">
         <div>
-          <div className=" font-bold text-5xl md:text-6xl lg:text-8xl ">
+          <div className=" font-bold text-5xl sm:text-6xl lg:text-8xl ">
             Web <br />
             Developer
           </div>
@@ -52,7 +52,7 @@ function Hero({}: Props) {
 
         <div className="flex justify-end">
           <div
-            className="font-bold text-5xl md:text-7xl  lg:text-9xl h-36 md:h-48 lg:h-72  text-right w-fit bg-clip-text
+            className="font-bold text-5xl sm:text-7xl  lg:text-9xl h-full-pb  text-right w-fit bg-clip-text
             text-transparent bg-gradient-flow bg-[length:200%_auto] animate-gradient"
           >
             Jerard <br />

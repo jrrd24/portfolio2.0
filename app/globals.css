@@ -110,3 +110,8 @@ body {
 .sidebar {
   transform: rotate(-90deg);
 }
+
+.h-full-pb {
+  @apply h-auto;
+  padding-bottom: 10px;
+}
