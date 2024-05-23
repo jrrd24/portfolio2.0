@@ -1,6 +1,8 @@
 import React from "react";
 import SectionNameImage from "../components/SectionNameImage";
 import AboutSectionTitle from "../components/AboutSectionTitle";
+import ExperienceContainer from "../components/ExperienceContainer";
+import About_Experiences from "./components/About_Experiences";
 
 type Props = {};
 
@@ -39,31 +41,33 @@ const About = (props: Props) => {
           <div className="mt-24 lg:mt-48  flex flex-col gap-24 items-center px-4 lg:px-12">
             {/**Who Am I */}
             <div className=" text-left flex flex-col">
-              <h3 className="text-xl md:text-3xl  lg:text-4xl font-medium">
+              <h3 className="text-xl md:text-2xl  lg:text-3xl font-medium">
                 Hi. I'm
               </h3>
 
               <div
-                className="mt-2 font-bold text-5xl md:text-7xl  lg:text-8xl w-fit h-full-pb bg-clip-text
+                className="mt-2 font-bold text-5xl md:text-6xl  lg:text-7xl w-fit h-full-pb bg-clip-text
                 text-transparent bg-gradient-flow bg-[length:200%_auto] animate-gradient "
               >
                 Jerard Pagalilauan
               </div>
 
-              <h3 className="mt-4 text-lg md:text-xl  lg:text-2xl font-medium max-w-[48rem] dark:text-custom-white-dark/80 text-custom-dark-light/80">
+              <p className="mt-4 text-lg md:text-xl  lg:text-xl max-w-[48rem] dark:text-custom-white-dark/80 text-custom-dark-light/80">
                 A curious and hardworking{" "}
                 <b>Bachelor of Science in Information Technology</b> graduate
                 with experience in developing web and desktop apps, who’s
                 dedicated in bringing creative and functional web designs to
                 life through programming.
-              </h3>
+              </p>
 
-              <div className="mt-12 font-bold  bg-gradient-flow bg-[length:200%_auto] animate-gradient w-1/2 sm:w-1/4 h-8 rounded-xl"></div>
+              <div className="mt-12 bg-gradient-flow bg-[length:200%_auto] animate-gradient w-1/2 sm:w-1/4 h-8 rounded-xl"></div>
             </div>
 
             {/**Professional Experience */}
             <div className="flex flex-col items-center mt-48">
               <AboutSectionTitle title="My Professional Experience" />
+
+              <About_Experiences />
             </div>
           </div>
         </div>
