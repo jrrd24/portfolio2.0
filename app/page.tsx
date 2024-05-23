@@ -4,6 +4,7 @@ import Projects from "./sections/Projects";
 import { ThemeProvider } from "next-themes";
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
+import About from "./sections/About";
 
 export const metadata: Metadata = {
   title: "Jerard Pagalilauan | Home",
@@ -25,6 +26,7 @@ export default function Home() {
           >
             <Hero />
             <Projects />
+            <About/>
           </div>
           <div className="lg:col-start-11 lg:col-end-12 w-20 h-screen">
             <Sidebar />

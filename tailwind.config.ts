@@ -65,6 +65,7 @@ const config: Config = {
       letterSpacing: {
         tightest: '-.099em',
       }
+
     },
    
   },

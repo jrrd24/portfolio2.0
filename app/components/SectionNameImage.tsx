@@ -21,7 +21,7 @@ const SectionNameImage = (props: Props) => {
         src={theme === "dark" ? props.darkImage : props.lightImage}
         width={props.width}
         height={props.height}
-        alt="projects"
+        alt="section"
         // style={{ width: "auto", height: "auto" }}
       />
     )
