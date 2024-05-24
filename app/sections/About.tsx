@@ -2,7 +2,7 @@ import React from "react";
 import SectionNameImage from "../components/SectionNameImage";
 import AboutSectionTitle from "../components/AboutSectionTitle";
 import ExperienceContainer from "../components/ExperienceContainer";
-import About_Experiences from "./components/About_Experiences";
+import About_Experiences from "./components/AboutExperiences";
 
 type Props = {};
 
@@ -64,10 +64,14 @@ const About = (props: Props) => {
             </div>
 
             {/**Professional Experience */}
-            <div className="flex flex-col items-center mt-48">
+            <div className="flex flex-col items-center mt-48 gap-16">
               <AboutSectionTitle title="My Professional Experience" />
-
               <About_Experiences />
+            </div>
+
+            {/**Professional Experience */}
+            <div className="flex flex-col items-center mt-48 gap-16">
+              <AboutSectionTitle title="My Achievements" />
             </div>
           </div>
         </div>
