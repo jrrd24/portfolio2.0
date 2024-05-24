@@ -4,12 +4,15 @@ import Image from "next/image";
 import { twMerge } from "tailwind-merge";
 import { TracingBeam } from "@/app/components/ui/tracing-beam";
 import React from "react";
+import ExperienceData from "@/app/data/ExperienceData";
 
-const About_Experiences = () => {
+const AboutExperiences = () => {
   return (
-    <>
-      <ExperienceContainer />
-    </>
+    <div>
+      {ExperienceData?.sort((a, b) => a.order - b.order).map((data) => (
+        <ExperienceContainer data={data} />
+      ))}
+    </div>
     // <TracingBeam className="px-6">
     //   <div className="max-w-2xl mx-auto antialiased pt-4 relative">
     //     {dummyContent.map((item, index) => (
@@ -114,4 +117,4 @@ const About_Experiences = () => {
 //   },
 // ];
 
-export default About_Experiences;
+export default AboutExperiences;
