@@ -3,6 +3,8 @@ import SectionNameImage from "../components/SectionNameImage";
 import AboutSectionTitle from "../components/AboutSectionTitle";
 import ExperienceContainer from "../components/ExperienceContainer";
 import About_Experiences from "./components/AboutExperiences";
+import AchievementContainer from "../components/AchievementContainer";
+import AchivementData from "../data/AchievementData";
 
 type Props = {};
 
@@ -72,6 +74,13 @@ const About = (props: Props) => {
             {/**Professional Experience */}
             <div className="flex flex-col items-center mt-48 gap-16">
               <AboutSectionTitle title="My Achievements" />
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                {AchivementData.sort((a, b) => a.order - b.order).map(
+                  (data) => (
+                    <AchievementContainer key={data.id} data={data} />
+                  )
+                )}
+              </div>
             </div>
           </div>
         </div>

@@ -10,7 +10,7 @@ const AboutExperiences = () => {
   return (
     <div>
       {ExperienceData?.sort((a, b) => a.order - b.order).map((data) => (
-        <ExperienceContainer data={data} />
+        <ExperienceContainer key={data.id} data={data} />
       ))}
     </div>
     // <TracingBeam className="px-6">
