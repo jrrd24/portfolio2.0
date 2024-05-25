@@ -21,12 +21,12 @@ type Responsibilities = {
 const ExperienceContainer = (props: Props) => {
   return (
     <div
-      className="my-0 xl:my-8 p-4 xl:p-16 max-w-[28rem] xl:w-[56rem] xl:max-w-none rounded-3xl h-fit 
+      className="my-8 p-4 xl:p-16 max-w-[28rem] xl:w-[56rem] xl:max-w-none rounded-3xl h-fit 
 bg-slate-100/70 shadow-2xl shadow-slate-500/30 dark:shadow-slate-700/30 dark:bg-slate-800/70  relative"
     >
       <div className="flex justify-between items-center">
-        <h1 className="text-2xl font-bold">{props.data.company}</h1>
-        <p className="text-lg font-base text-custom-dark-light/60 dark:text-custom-white-dark/60">
+        <h1 className="text-xl font-bold">{props.data.company}</h1>
+        <p className=" text-base font-base text-custom-dark-light/60 dark:text-custom-white-dark/60">
           {props.data.duration}
         </p>
       </div>
@@ -39,7 +39,7 @@ bg-slate-100/70 shadow-2xl shadow-slate-500/30 dark:shadow-slate-700/30 dark:bg-
         {props.data.responsibilities
           ?.sort((a, b) => a.order - b.order)
           .map((data) => (
-            <li>{data.content}</li>
+            <li key={data.id}>{data.content}</li>
           ))}
       </ul>
     </div>

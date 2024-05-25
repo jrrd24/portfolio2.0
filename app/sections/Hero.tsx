@@ -52,7 +52,7 @@ function Hero({}: Props) {
 
         <div className="flex justify-end">
           <div
-            className="font-bold text-5xl sm:text-7xl  lg:text-9xl h-full-pb  text-right w-fit bg-clip-text
+            className="font-bold text-5xl sm:text-7xl mb-6  lg:text-9xl h-full-pb  text-right w-fit bg-clip-text
             text-transparent bg-gradient-flow bg-[length:200%_auto] animate-gradient"
           >
             Jerard <br />
