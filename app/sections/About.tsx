@@ -82,6 +82,11 @@ const About = (props: Props) => {
                 )}
               </div>
             </div>
+
+            {/**Tech Stack */}
+            <div className="flex flex-col items-center mt-48 gap-16">
+              <AboutSectionTitle title="My Tech Stack" />
+            </div>
           </div>
         </div>
       </div>
