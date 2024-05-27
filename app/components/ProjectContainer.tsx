@@ -16,7 +16,8 @@ type Data = {
   link?: string;
   description: string;
   contrastColor: string;
-  mainColor: string;
+  gradientColorDark?: string;
+  gradientColorLight?: string;
   tags: Tags[];
   responsibilities: Responsibilities[];
 };
@@ -35,7 +36,7 @@ type Responsibilities = {
 
 const ProjectContainer = (props: Props) => {
   return (
-    <div className="my-24 xl:h-screen xl:max-h-[1280px] flex items-center justify-center">
+    <div className="my-24 xl:h-screen xl:max-h-[1280px] flex items-center justify-center group">
       <div
         className="my-0 xl:my-32 xl:py-20 max-w-[28rem] xl:w-[56rem] xl:max-w-none rounded-3xl h-fit 
       bg-slate-100/70 shadow-2xl shadow-slate-500/30 dark:shadow-slate-700/30 dark:bg-slate-800/70  relative"
@@ -48,7 +49,7 @@ const ProjectContainer = (props: Props) => {
         >
           {props.data.order.toString().padStart(2, "0")}
         </div>
-        <div className=" grid grid-cols-4 gap-4 xl:gap-0 justify-items-center items-center z-10">
+        <div className=" grid grid-cols-4 gap-4 xl:gap-0 justify-items-center items-center z-10 ">
           {/**Image */}
           <div
             className={` w-full xl:w-72 h-72 md:h-96 rounded-t-2xl rounded-b-none xl:rounded-2xl col-span-4 xl:col-span-2`}
@@ -62,7 +63,14 @@ const ProjectContainer = (props: Props) => {
           {/**Content */}
           <div className="col-span-4 xl:col-span-2 px-4  pb-6 pt-2 xl:pr-16">
             {/**Title */}
-            <h1 className="font-bold text-2xl md:text-3xl xl:text-5xl ">
+            <h1
+              className={
+                props.data.gradientColorDark && props.data.gradientColorLight
+                  ? `font-bold text-2xl md:text-3xl xl:text-5xl group-hover:bg-clip-text group-hover:text-transparent ease-in-out
+              dark:group-hover:${props.data.gradientColorDark} group-hover:${props.data.gradientColorLight} group-hover:bg-[length:200%_auto] group-hover:animate-gradient pb-2`
+                  : `font-bold text-2xl md:text-3xl xl:text-5xl`
+              }
+            >
               {props.data.title}
             </h1>
             {/**Link */}

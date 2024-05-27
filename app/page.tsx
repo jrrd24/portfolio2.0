@@ -26,9 +26,9 @@ export default function Home() {
           >
             <Hero />
             <Projects />
-            <About/>
+            <About />
           </div>
-          <div className="lg:col-start-11 lg:col-end-12 w-20 h-screen">
+          <div className="lg:col-start-11 lg:col-end-12 w-20 ">
             <Sidebar />
           </div>
         </div>

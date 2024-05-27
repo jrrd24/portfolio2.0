@@ -9,7 +9,8 @@ const ProjectsData = [
     link: "https://www.scaleupsolutions.ph/",
     order: 3,
     contrastColor: "#231F20",
-    mainColor: "#E84545",
+    gradientColorDark: "bg-gradient-scaleup-dark",
+    gradientColorLight: "bg-gradient-scaleup-light",
     tags: [
       { id: 1, name: "ASP.net", order: 1 },
       { id: 2, name: "HTML", order: 2 },
@@ -35,7 +36,8 @@ const ProjectsData = [
     link: "https://www.printtoscale.ph/",
     order: 2,
     contrastColor: "#F6F6F6",
-    mainColor: "#006D3A",
+    gradientColorDark: "bg-gradient-printToScale-dark",
+    gradientColorLight: "bg-gradient-printToScale-light",
     tags: [
       { id: 1, name: "ASP.net", order: 1 },
       { id: 2, name: "HTML", order: 2 },
@@ -61,7 +63,8 @@ const ProjectsData = [
     link: undefined,
     order: 1,
     contrastColor: "#22C55E",
-    mainColor: "#22C55E",
+    gradientColorDark: "bg-gradient-kaya-dark",
+    gradientColorLight: "bg-gradient-kaya-light",
     tags: [
       { id: 1, name: "NextJS", order: 1 },
       { id: 2, name: "Gemini AI", order: 2 },
@@ -87,7 +90,8 @@ const ProjectsData = [
     link: undefined,
     order: 4,
     contrastColor: "#6D5FDF",
-    mainColor: "#6D5FDF",
+    gradientColorDark: "bg-gradient-lokal360-dark",
+    gradientColorLight: "bg-gradient-lokal360-light",
     tags: [
       { id: 1, name: "ReactJS", order: 1 },
       { id: 2, name: "NodeJS", order: 2 },
@@ -114,7 +118,8 @@ const ProjectsData = [
     link: undefined,
     order: 5,
     contrastColor: "#FFFFFF",
-    mainColor: "#6E1269",
+    gradientColorDark: "bg-gradient-mtmc-dark",
+    gradientColorLight: "bg-gradient-mtmc-light",
     tags: [
       { id: 1, name: "C# (Windows Forms App)", order: 1 },
       { id: 2, name: ".NET Framework", order: 2 },

@@ -21,11 +21,11 @@ type Responsibilities = {
 const ExperienceContainer = (props: Props) => {
   return (
     <div
-      className="my-8 p-6 py-8 sm:p-8 md:p-16 max-w-[28rem] xl:w-[56rem] md:max-w-none rounded-3xl h-fit 
+      className="group my-8 p-6 py-8 sm:p-8 md:p-16 max-w-[28rem] xl:w-[56rem] md:max-w-none rounded-3xl h-fit
 bg-slate-100/70 shadow-2xl shadow-slate-500/30 dark:shadow-slate-700/30 dark:bg-slate-800/70  relative"
     >
-      <div className="flex justify-between items-center ">
-        <h1 className="text-xl font-bold">{props.data.company}</h1>
+      <div className="flex justify-between items-center  group-hover:bg-clip-text group-hover:text-transparent group-hover:bg-gradient-flow group-hover:bg-[length:200%_auto] group-hover:animate-gradient transition-all duration-300 ">
+        <h1 className="text-xl font-bold  ">{props.data.company}</h1>
         <p className=" text-base font-base text-custom-dark-light/60 dark:text-custom-white-dark/60 hidden md:block">
           {props.data.duration}
         </p>
