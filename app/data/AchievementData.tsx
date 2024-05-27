@@ -71,10 +71,10 @@ const AchivementData = [
 
   {
     id: 5,
-    title: "International Conference on Information Technology Education ",
+    title: "IDEATECH 2023",
     date: "November 2023",
     order: 5,
-    image: "/assets/achievements/ICITE.png",
+    image: "/assets/achievements/IDEATECH.png",
     tags: [
       {
         id: 1,
