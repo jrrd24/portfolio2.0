@@ -2,9 +2,11 @@ import React from "react";
 import SectionNameImage from "../components/SectionNameImage";
 import AboutSectionTitle from "../components/AboutSectionTitle";
 import ExperienceContainer from "../components/ExperienceContainer";
-import About_Experiences from "./components/AboutExperiences";
+import AboutExperiences from "./components/AboutExperiences";
 import AchievementContainer from "../components/AchievementContainer";
 import AchivementData from "../data/AchievementData";
+import TechStackContainer from "../components/TechStackContainer";
+import TechStackData from "../data/TechStackData";
 
 type Props = {};
 
@@ -68,7 +70,7 @@ const About = (props: Props) => {
             {/**Professional Experience */}
             <div className="flex flex-col items-center mt-48 gap-16">
               <AboutSectionTitle title="My Professional Experience" />
-              <About_Experiences />
+              <AboutExperiences />
             </div>
 
             {/**Achievements */}
@@ -86,6 +88,22 @@ const About = (props: Props) => {
             {/**Tech Stack */}
             <div className="flex flex-col items-center mt-48 gap-20">
               <AboutSectionTitle title="My Tech Stack" />
+
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                {TechStackData.filter((a) => a.type === "frontend")
+                  .sort((a, b) => a.order - b.order)
+                  .map((data) => (
+                    <TechStackContainer data={data} />
+                  ))}
+              </div>
+
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                {TechStackData.filter((a) => a.type === "backend")
+                  .sort((a, b) => a.order - b.order)
+                  .map((data) => (
+                    <TechStackContainer data={data} />
+                  ))}
+              </div>
             </div>
           </div>
         </div>

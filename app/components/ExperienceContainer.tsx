@@ -25,14 +25,14 @@ const ExperienceContainer = (props: Props) => {
 bg-slate-100/70 shadow-2xl shadow-slate-500/30 dark:shadow-slate-700/30 dark:bg-slate-800/70  relative"
     >
       <div className="flex justify-between items-center  group-hover:bg-clip-text group-hover:text-transparent group-hover:bg-gradient-flow group-hover:bg-[length:200%_auto] group-hover:animate-gradient transition-all duration-300 ">
-        <h1 className="text-xl font-bold  ">{props.data.company}</h1>
+        <h1 className="text-xl font-bold  ">{props.data.job}</h1>
         <p className=" text-base font-base text-custom-dark-light/60 dark:text-custom-white-dark/60 hidden md:block">
           {props.data.duration}
         </p>
       </div>
 
       <h2 className="text-lg font-semibold text-custom-dark-light/60 dark:text-custom-white-dark/60">
-        {props.data.job}
+        {props.data.company}
       </h2>
       <p className=" text-base font-base text-custom-dark-light/60 dark:text-custom-white-dark/60 block md:hidden">
         {props.data.duration}

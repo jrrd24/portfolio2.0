@@ -30,7 +30,7 @@ const ProjectsData = [
     id: 2,
     title: "Print To Scale",
     description:
-      "The website of Print To Scale, formerly known as Horizon Printers, the company a trusted name in the offset printing industry. ",
+      "The website of Print To Scale, formerly known as Horizon Printers, the company is a trusted name in the offset printing industry. ",
     logo: "/assets/projects/logo/printToScale_logo.png",
     thumbnail: "/assets/projects/thumbnail/printToScale_thumbnail.png",
     link: "https://www.printtoscale.ph/",
