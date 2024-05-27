@@ -71,8 +71,8 @@ const About = (props: Props) => {
               <About_Experiences />
             </div>
 
-            {/**Professional Experience */}
-            <div className="flex flex-col items-center mt-48 gap-16">
+            {/**Achievements */}
+            <div className="flex flex-col items-center mt-48 gap-20">
               <AboutSectionTitle title="My Achievements" />
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {AchivementData.sort((a, b) => a.order - b.order).map(
@@ -84,7 +84,7 @@ const About = (props: Props) => {
             </div>
 
             {/**Tech Stack */}
-            <div className="flex flex-col items-center mt-48 gap-16">
+            <div className="flex flex-col items-center mt-48 gap-20">
               <AboutSectionTitle title="My Tech Stack" />
             </div>
           </div>
