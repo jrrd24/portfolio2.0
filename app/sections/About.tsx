@@ -8,7 +8,9 @@ import AchivementData from "../data/AchievementData";
 import TechStackContainer from "../components/TechStackContainer";
 import TechStackData from "../data/TechStackData";
 
-type Props = {};
+type Props = {
+  label: string;
+};
 
 const About = (props: Props) => {
   return (
@@ -89,19 +91,27 @@ const About = (props: Props) => {
             <div className="flex flex-col items-center mt-48 gap-20">
               <AboutSectionTitle title="My Tech Stack" />
 
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 gap-3 text-custom-dark-light/80 dark:text-custom-white-dark/80">
+                <TechStackLabel label="Frontend /Web Design" />
+
                 {TechStackData.filter((a) => a.type === "frontend")
                   .sort((a, b) => a.order - b.order)
                   .map((data) => (
-                    <TechStackContainer data={data} />
+                    <TechStackContainer key={data.id} data={data} />
                   ))}
-              </div>
 
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <TechStackLabel label="Backend / Database" />
                 {TechStackData.filter((a) => a.type === "backend")
                   .sort((a, b) => a.order - b.order)
                   .map((data) => (
-                    <TechStackContainer data={data} />
+                    <TechStackContainer key={data.id} data={data} />
+                  ))}
+
+                <TechStackLabel label="Other" />
+                {TechStackData.filter((a) => a.type === "other")
+                  .sort((a, b) => a.order - b.order)
+                  .map((data) => (
+                    <TechStackContainer key={data.id} data={data} />
                   ))}
               </div>
             </div>
@@ -109,6 +119,17 @@ const About = (props: Props) => {
         </div>
       </div>
     </section>
+  );
+};
+
+const TechStackLabel = (props: Props) => {
+  return (
+    <div
+      className="bg-slate-100/70 shadow-2xl shadow-slate-500/30 dark:shadow-slate-700/30 dark:bg-slate-800/70 relative flex items-center justify-center 
+      rounded-xl h-12 font-bold  col-span-2 sm:col-span-3 md:col-span-4 xl:col-span-5"
+    >
+      {props.label}
+    </div>
   );
 };
 

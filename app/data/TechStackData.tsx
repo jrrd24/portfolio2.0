@@ -1,9 +1,28 @@
 import { TiHtml5 } from "react-icons/ti";
-import { FaCss3Alt, FaFigma, FaReact } from "react-icons/fa6";
+import {
+  FaCss3Alt,
+  FaFigma,
+  FaGithub,
+  FaNodeJs,
+  FaReact,
+} from "react-icons/fa6";
 import { IoLogoJavascript } from "react-icons/io5";
 import { BiLogoTypescript } from "react-icons/bi";
-import { SiTailwindcss, SiMui, SiNextui, SiDaisyui } from "react-icons/si";
+import {
+  SiTailwindcss,
+  SiMui,
+  SiNextui,
+  SiDaisyui,
+  SiExpress,
+  SiSequelize,
+  SiAxios,
+  SiPrisma,
+  SiPostman,
+  SiCsharp,
+} from "react-icons/si";
 import { RiNextjsFill } from "react-icons/ri";
+import { GrMysql } from "react-icons/gr";
+import { DiDotnet } from "react-icons/di";
 
 const TechStackData = [
   {
@@ -103,6 +122,96 @@ const TechStackData = [
     link: "https://nextjs.org/",
     order: 2,
     type: "frontend",
+  },
+
+  {
+    id: 12,
+    Icon: FaNodeJs,
+    logo: "/assets/logos/nodejs.svg",
+    link: "https://nodejs.org/en",
+    order: 1,
+    type: "backend",
+  },
+
+  {
+    id: 13,
+    Icon: SiExpress,
+    logo: "/assets/logos/expressjs.svg",
+    link: "https://expressjs.com/",
+    order: 2,
+    type: "backend",
+  },
+
+  {
+    id: 14,
+    Icon: GrMysql,
+    logo: "/assets/logos/mysql.svg",
+    link: "https://www.mysql.com/",
+    order: 4,
+    type: "backend",
+  },
+
+  {
+    id: 15,
+    Icon: DiDotnet,
+    logo: "/assets/logos/dotnet.svg",
+    link: "https://dotnet.microsoft.com/en-us/download/dotnet-framework",
+    order: 3,
+    type: "backend",
+  },
+
+  {
+    id: 16,
+    Icon: SiSequelize,
+    logo: "/assets/logos/sequelize.svg",
+    link: "https://sequelize.org/",
+    order: 7,
+    type: "backend",
+  },
+
+  {
+    id: 17,
+    Icon: SiAxios,
+    logo: "/assets/logos/axios.svg",
+    link: "https://axios-http.com/",
+    order: 6,
+    type: "backend",
+  },
+
+  {
+    id: 18,
+    Icon: SiPrisma,
+    logo: "/assets/logos/prisma.svg",
+    link: "https://www.prisma.io/",
+    order: 5,
+    type: "backend",
+  },
+
+  {
+    id: 19,
+    Icon: FaGithub,
+    logo: "/assets/logos/github.svg",
+    link: "https://github.com/",
+    order: 1,
+    type: "other",
+  },
+
+  {
+    id: 20,
+    Icon: SiPostman,
+    logo: "/assets/logos/postman.svg",
+    link: "https://www.postman.com/",
+    order: 2,
+    type: "other",
+  },
+
+  {
+    id: 21,
+    Icon: SiCsharp,
+    logo: "/assets/logos/csharp.svg",
+    link: "https://learn.microsoft.com/en-us/dotnet/csharp/",
+    order: 3,
+    type: "other",
   },
 ];
 export default TechStackData;
