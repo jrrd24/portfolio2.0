@@ -8,7 +8,9 @@ import AchivementData from "../data/AchievementData";
 import TechStackContainer from "../components/TechStackContainer";
 import TechStackData from "../data/TechStackData";
 
-type Props = {
+type Props = {};
+
+type LabelProps = {
   label: string;
 };
 
@@ -18,10 +20,10 @@ const About = (props: Props) => {
       {/* Bottom Circle */}
       <div
         className="rounded-full bg-radial-circle from-custom-red/30 dark:from-custom-red/40 from-0% via-custom-red/20 dark:via-custom-red/30 via-25% to-transparent to-70% 
-         h-[64rem] w-[32rem] md:h-[64rem] md:w-[48rem] blur-3xl absolute top-[-28rem] lg:top-[-32rem] right-[-12rem] lg:right-[0rem] "
+        h-[64rem] w-[32rem] md:h-[64rem] md:w-[48rem] blur-3xl absolute top-[-28rem] lg:top-[-32rem] right-[-12rem] lg:right-[0rem] "
       />
 
-      <div className="w-screen mt-32 flex h-8 justify-center lg:hidden z-10 container">
+      <div className="w-screen mt-32 flex h-8 justify-center lg:hidden z-10 container relative">
         <SectionNameImage
           lightImage="/assets/section_wordmark/about_h_dark.svg"
           darkImage="/assets/section_wordmark/about_h.svg"
@@ -30,8 +32,8 @@ const About = (props: Props) => {
         />
       </div>
 
-      <div className="  grid grid-cols-12 px-8 gap-0 w-screen container a-10">
-        <div className="sticky top-0 h-screen items-center w-14 lg:col-start-1 lg:col-end-2 hidden lg:flex">
+      <div className="  grid grid-cols-12 px-8 gap-0 w-screen container z-10">
+        <div className="sticky top-0 h-screen items-center w-14 lg:col-start-1 lg:col-end-2 hidden lg:flex z-20">
           <SectionNameImage
             lightImage="/assets/section_wordmark/about_dark.svg"
             darkImage="/assets/section_wordmark/about.svg"
@@ -44,9 +46,9 @@ const About = (props: Props) => {
           id="about"
           className="md:px-8  w-full col-start-1 lg:col-start-2 col-end-13"
         >
-          <div className="mt-24 lg:mt-48  flex flex-col gap-24 items-center px-4 lg:px-12">
+          <div className="flex flex-col gap-24 items-center md:px-4 lg:px-12 z-20 relative">
             {/**Who Am I */}
-            <div className=" text-left flex flex-col">
+            <div className=" text-left flex flex-col justify-center align-middle h-screen xl:max-h-[1280px]">
               <h3 className="text-xl md:text-2xl  lg:text-3xl font-medium">
                 Hi. I'm
               </h3>
@@ -70,7 +72,7 @@ const About = (props: Props) => {
             </div>
 
             {/**Professional Experience */}
-            <div className="flex flex-col items-center mt-48 gap-16">
+            <div className="flex flex-col items-center gap-16">
               <AboutSectionTitle title="My Professional Experience" />
               <AboutExperiences />
             </div>
@@ -122,11 +124,11 @@ const About = (props: Props) => {
   );
 };
 
-const TechStackLabel = (props: Props) => {
+const TechStackLabel = (props: LabelProps) => {
   return (
     <div
       className="bg-slate-100/70 shadow-2xl shadow-slate-500/30 dark:shadow-slate-700/30 dark:bg-slate-800/70 relative flex items-center justify-center 
-      rounded-xl h-12 font-bold  col-span-2 sm:col-span-3 md:col-span-4 xl:col-span-5"
+      rounded-xl h-12 font-bold  col-span-2 sm:col-span-3 md:col-span-4 xl:col-span-5 backdrop-blur-sm"
     >
       {props.label}
     </div>
