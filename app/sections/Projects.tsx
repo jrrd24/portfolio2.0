@@ -16,7 +16,7 @@ function Hero({}: Props) {
          h-[64rem] w-[32rem] md:h-[64rem] md:w-[48rem] blur-3xl absolute top-[-32rem] left-[-12rem] lg:left-[0rem] z-0 "
       />
 
-      <div className="w-screen mt-48 flex justify-center lg:hidden z-10 container">
+      <div className="w-screen mt-48 flex justify-center lg:hidden z-10 container relative">
         <SectionNameImage
           lightImage="/assets/section_wordmark/projects_h_dark.svg"
           darkImage="/assets/section_wordmark/projects_h.svg"
@@ -25,7 +25,7 @@ function Hero({}: Props) {
         />
       </div>
 
-      <div className="xl:my-48 px-8 grid grid-cols-12 gap-0 w-screen container z-10">
+      <div className="xl:my-48 px-8 grid grid-cols-12 gap-0 w-screen container z-10 relative">
         <div className="sticky top-0 h-screen items-center w-48 lg:col-start-1 lg:col-end-2 hidden lg:flex">
           <SectionNameImage
             lightImage="/assets/section_wordmark/projects_dark.svg"

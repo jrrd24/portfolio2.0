@@ -10,7 +10,7 @@ const TechStackContainer = (props: Props) => {
     <a
       className="group max-w-[6rem] xl:max-w-[8rem] md:max-w-none rounded-xl aspect-square
     bg-slate-100/70 shadow-2xl shadow-slate-500/30 dark:shadow-slate-700/30 dark:bg-slate-800/70 relative
-    flex items-center justify-center hover:dark:bg-slate-100 duration-300 hover:bg-slate-50"
+    flex items-center justify-center hover:dark:bg-slate-100 duration-300 hover:bg-slate-50 backdrop-blur-sm"
       href={props.data.link}
       target="blank"
     >
