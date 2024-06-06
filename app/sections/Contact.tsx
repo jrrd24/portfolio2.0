@@ -2,6 +2,7 @@ import React from "react";
 import SectionNameImage from "../components/SectionNameImage";
 import { FaFacebook } from "react-icons/fa6";
 import ContactData from "../data/ContactData";
+import Link from "next/link";
 
 type Props = {};
 
@@ -45,9 +46,9 @@ const Contact = (props: Props) => {
 
               <div className="flex gap-4 mt-4">
                 {ContactData.sort((a, b) => a.order - b.order).map((data) => (
-                  <a href={data.link} target="blank">
+                  <Link href={data.link} target="blank" key={data.id}>
                     <data.Icon className="h-6 w-full hover:text-custom-dark dark:hover:text-custom-white" />
-                  </a>
+                  </Link>
                 ))}
               </div>
             </div>

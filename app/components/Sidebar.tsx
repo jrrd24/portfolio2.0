@@ -1,25 +1,25 @@
-import React from "react";
-
+"use client";
+import Link from "next/link";
 type Props = {};
 
 function Sidebar({}: Props) {
   return (
-    <div className="sidebar w-[90vh] h-[60px] origin-bottom-right right-0 bottom-full flex fixed invisible lg:visible">
+    <nav className="sidebar w-[90vh] h-[60px] origin-bottom-right right-0 bottom-full flex fixed invisible lg:visible">
       <ul className="h-fit flex gap-6 rotate-180 font-semibold select-none [&_a]:hover:cursor-pointer">
         <li>
-          <a href="#home">Home</a>
+          <Link href="#home">Home</Link>
         </li>
         <li>
-          <a href="#projects">Projects</a>
+          <Link href="#projects">Projects</Link>
         </li>
         <li>
-          <a href="#about">About</a>
+          <Link href="#about">About</Link>
         </li>
         <li>
-          <a href="#contact">Contact</a>
+          <Link href="#contact">Contact</Link>
         </li>
       </ul>
-    </div>
+    </nav>
   );
 }
 

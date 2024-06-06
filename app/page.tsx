@@ -6,9 +6,11 @@ import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
 import About from "./sections/About";
 import Contact from "./sections/Contact";
+import { useInView } from "react-intersection-observer";
+import Footer from "./components/Footer";
 
 export const metadata: Metadata = {
-  title: "Jerard Pagalilauan | Home",
+  title: "Jerard Pagalilauan",
 };
 
 export default function Home() {
@@ -29,6 +31,7 @@ export default function Home() {
             <Projects />
             <About />
             <Contact />
+            <Footer />
           </div>
           <div className="lg:col-start-11 lg:col-end-12 w-20 ">
             <Sidebar />
