@@ -6,7 +6,6 @@ import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
 import About from "./sections/About";
 import Contact from "./sections/Contact";
-import { useInView } from "react-intersection-observer";
 import Footer from "./components/Footer";
 
 export const metadata: Metadata = {

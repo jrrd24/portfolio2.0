@@ -43,9 +43,9 @@ const ProjectContainer = (props: Props) => {
       >
         {/**Number */}
         <div
-          className=" font-bold text-7xl sm:text-8xl xl:text-9xl absolute right-[-1.4rem] md:right-[-2.6rem] top-[-2.3rem] xl:top-[-4rem] tracking-tightest
+          className=" font-bold text-7xl sm:text-8xl xl:text-9xl absolute right-[-1.4rem] md:right-[-3.6rem] top-[-2.3rem] xl:top-[-4rem] tracking-tightest
           bg-gradient-to-bl  from-custom-dark-light/40 dark:from-custom-white-dark/40  to-custom-dark-light/5 
-        dark:to-custom-white-dark/5 to-70% bg-clip-text text-transparent"
+        dark:to-custom-white-dark/5 to-70% bg-clip-text text-transparent pr-6 hidden xl:block"
         >
           {props.data.order.toString().padStart(2, "0")}
         </div>
