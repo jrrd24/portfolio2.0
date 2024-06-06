@@ -42,30 +42,44 @@ const Navbar = (props: Props) => {
         </div>
       </div>
       <div
-        className={`w-screen lg:hidden container mt-0 lg:mt-8 px-8 flex flex-col justify-between items-end transition-opacity duration-300 ${
-          openMenu
-            ? "opacity-100 h-screen "
-            : "opacity-0 backdrop-blur-none h-0"
+        className={`w-screen lg:hidden container mt-0 lg:mt-8 px-8 flex flex-col justify-between items-end  ${
+          openMenu ? "block h-screen " : "hidden backdrop-blur-none h-0"
         }`}
       >
         <ul className="text-right space-y-8 pt-36">
           <li>
-            <Link href="#home" onClick={() => handleMenuChange()}>
+            <Link
+              href="#home"
+              onClick={() => handleMenuChange()}
+              className="py-4 pl-16"
+            >
               Home
             </Link>
           </li>
           <li>
-            <Link href="#projects" onClick={() => handleMenuChange()}>
+            <Link
+              href="#projects"
+              onClick={() => handleMenuChange()}
+              className="py-4 pl-16"
+            >
               Projects
             </Link>
           </li>
           <li>
-            <Link href="#about" onClick={() => handleMenuChange()}>
+            <Link
+              href="#about"
+              onClick={() => handleMenuChange()}
+              className="py-4 pl-16"
+            >
               About
             </Link>
           </li>
           <li>
-            <Link href="#contact" onClick={() => handleMenuChange()}>
+            <Link
+              href="#contact"
+              onClick={() => handleMenuChange()}
+              className="py-4 pl-16"
+            >
               Contact
             </Link>
           </li>
