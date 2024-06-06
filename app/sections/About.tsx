@@ -50,7 +50,7 @@ const About = (props: Props) => {
             {/**Who Am I */}
             <div className=" text-left flex flex-col justify-center align-middle h-screen xl:max-h-[1280px]">
               <h3 className="text-xl md:text-2xl  lg:text-3xl font-medium">
-                Hi. I'm
+                Hi. I&apos;m
               </h3>
 
               <div
