@@ -7,7 +7,7 @@ type Props = {
 const Tag = (props: Props) => {
   return (
     <div
-      className="px-3 text-custom-dark/60 dark:text-custom-white/60 bg-slate-200 dark:bg-slate-700 min-w-fit text-sm 
+      className="px-3 text-custom-dark/60 dark:text-custom-white/60 bg-slate-200 dark:bg-slate-700 min-w-fit text-xs md:text-sm 
     hover:bg-slate-300 hover:dark:bg-slate-600 font-semibold rounded-lg min-h-8 flex justify-center items-center select-none"
     >
       {props.name}

@@ -46,7 +46,7 @@ const About = (props: Props) => {
           id="about"
           className="md:px-8  w-full col-start-1 lg:col-start-2 col-end-13"
         >
-          <div className="flex flex-col gap-24 items-center md:px-4 lg:px-12 z-20 relative">
+          <div className="flex flex-col md:gap-24 items-center md:px-4 lg:px-12 z-20 relative">
             {/**Who Am I */}
             <div className=" text-left flex flex-col justify-center align-middle h-screen xl:max-h-[1280px]">
               <h3 className="text-xl md:text-2xl  lg:text-3xl font-medium">
@@ -60,7 +60,7 @@ const About = (props: Props) => {
                 Jerard Pagalilauan
               </div>
 
-              <p className="mt-4 text-lg md:text-xl  lg:text-xl max-w-[48rem] dark:text-custom-white-dark/80 text-custom-dark-light/80">
+              <p className="mt-4 text-base md:text-xl  lg:text-xl max-w-[48rem] dark:text-custom-white-dark/80 text-custom-dark-light/80">
                 A curious and hardworking{" "}
                 <b>Bachelor of Science in Information Technology</b> graduate
                 with experience in developing web and desktop apps, who’s
@@ -68,11 +68,11 @@ const About = (props: Props) => {
                 life through programming.
               </p>
 
-              <div className="mt-12 bg-gradient-flow bg-[length:200%_auto] animate-gradient w-1/2 sm:w-1/4 h-8 rounded-xl"></div>
+              <div className="mt-12 bg-gradient-flow bg-[length:200%_auto] animate-gradient w-1/2 sm:w-1/4 h-6 md:h-8 rounded-xl"></div>
             </div>
 
             {/**Professional Experience */}
-            <div className="flex flex-col items-center gap-16">
+            <div className="flex flex-col items-center gap-8 md:gap-16">
               <AboutSectionTitle title="My Professional Experience" />
               <AboutExperiences />
             </div>

@@ -85,7 +85,7 @@ const ProjectContainer = (props: Props) => {
             <h3 className=" font-bold text-sm md:text-base mt-6 text-custom-dark dark:text-custom-white">
               Responsibilities:
             </h3>
-            <ul className="ml-2 mt-2 [&_a]:font-regular text-custom-dark-light/80 dark:text-custom-white-dark/80">
+            <ul className="ml-2 mt-2 [&_li]:text-sm [&_li]:md:text-base text-custom-dark-light/80 dark:text-custom-white-dark/80">
               {props.data.responsibilities
                 ?.sort((a, b) => a.order - b.order)
                 .map((data) => (

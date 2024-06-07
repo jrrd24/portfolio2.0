@@ -26,19 +26,19 @@ bg-slate-100/70 shadow-2xl shadow-slate-500/30 dark:shadow-slate-700/30 dark:bg-
     >
       <div className="flex justify-between items-center  group-hover:bg-clip-text group-hover:text-transparent group-hover:bg-gradient-flow group-hover:bg-[length:200%_auto] group-hover:animate-gradient transition-all duration-300 ">
         <h1 className="text-xl font-bold  ">{props.data.job}</h1>
-        <p className=" text-base font-base text-custom-dark-light/60 dark:text-custom-white-dark/60 hidden md:block">
+        <p className=" text-base text-custom-dark-light/60 dark:text-custom-white-dark/60 hidden md:block">
           {props.data.duration}
         </p>
       </div>
 
-      <h2 className="text-lg font-semibold text-custom-dark-light/60 dark:text-custom-white-dark/60">
+      <h2 className=" text-base md:text-lg font-semibold text-custom-dark-light/60 dark:text-custom-white-dark/60">
         {props.data.company}
       </h2>
-      <p className=" text-base font-base text-custom-dark-light/60 dark:text-custom-white-dark/60 block md:hidden">
+      <p className=" text-sm text-custom-dark-light/60 dark:text-custom-white-dark/60 block md:hidden">
         {props.data.duration}
       </p>
 
-      <ul className="mt-6 list-disc ml-3 text-custom-dark-light/80 dark:text-custom-white-dark/80">
+      <ul className="mt-6 list-disc ml-3 text-custom-dark-light/80 dark:text-custom-white-dark/80  text-sm md:text-base ">
         {props.data.responsibilities
           ?.sort((a, b) => a.order - b.order)
           .map((data) => (

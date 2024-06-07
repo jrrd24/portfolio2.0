@@ -41,7 +41,7 @@ bg-slate-100/70 shadow-2xl shadow-slate-500/30 dark:shadow-slate-700/30 dark:bg-
       <div className="flex flex-col gap-2">
         {/**Title */}
         <h1 className="text-xl font-bold ">{props.data.title}</h1>
-        <p className=" text-base font-base text-custom-dark-light/60 dark:text-custom-white-dark/60">
+        <p className=" text-sm md:text-base text-custom-dark-light/60 dark:text-custom-white-dark/60">
           {props.data.date}
         </p>
       </div>
