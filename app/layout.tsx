@@ -17,6 +17,17 @@ export const metadata: Metadata = {
     card: "summary_large_image",
   },
   metadataBase: new URL("https://www.jerardpagalilauan.com/"),
+  openGraph: {
+    type: "website",
+    url: "https://www.jerardpagalilauan.com/",
+    title: "Jerard Pagalilauan",
+    description: "Jerard Pagalilauan's Personal Web Portfolio",
+    images: [
+      {
+        url: "/opengraph-image",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
