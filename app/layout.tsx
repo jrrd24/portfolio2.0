@@ -22,11 +22,6 @@ export const metadata: Metadata = {
     url: "https://www.jerardpagalilauan.com/",
     title: "Jerard Pagalilauan",
     description: "Jerard Pagalilauan's Personal Web Portfolio",
-    images: [
-      {
-        url: "/opengraph-image",
-      },
-    ],
   },
 };
 
@@ -50,6 +45,13 @@ export default function RootLayout({
           type="image/<generated>"
           sizes="180x180"
         />
+
+        {/**opengraph image */}
+        <meta property="og:image" content="/opengraph-image?<generated>" />
+        <meta property="og:image:type" content="<generated>" />
+        <meta property="og:image:width" content="<generated>" />
+        <meta property="og:image:height" content="<generated>" />
+        <meta property="og:image:alt" content="About Jerard Pagalilauan" />
       </head>
       <body
         className={`${poppins.variable} relative min-h-screen bg-custom-white-dark dark:bg-custom-dark`}
