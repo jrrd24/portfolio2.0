@@ -5,7 +5,10 @@ import { useTheme } from "next-themes";
 export default function DarkModeButton() {
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
-  useEffect(() => setMounted(true), []);
+  useEffect(() => {
+    setMounted(true);
+    setTheme("dark");
+  }, []);
 
   return (
     mounted && (
