@@ -22,7 +22,7 @@ type Tag = {
 const AchievementContainer = (props: Props) => {
   return (
     <div
-      className="max-w-[24rem] xl:w-[56rem] rounded-3xl flex flex-col gap-6 p-6
+      className="group max-w-[24rem] xl:w-[56rem] rounded-3xl flex flex-col gap-6 p-6
 bg-slate-100/70 shadow-2xl shadow-slate-500/30 dark:shadow-slate-700/30 dark:bg-slate-800/70  relative"
     >
       {/**Image */}
@@ -34,7 +34,7 @@ bg-slate-100/70 shadow-2xl shadow-slate-500/30 dark:shadow-slate-700/30 dark:bg-
           width={500}
           height={500}
           alt="achievement"
-          className="hover:scale-110 transition duration-500  w-full h-56 rounded-t-2xl xl:rounded-xl object-cover"
+          className=" group-hover:scale-110 transition duration-500  w-full h-56 rounded-t-2xl xl:rounded-xl object-cover"
         />
       </div>
 

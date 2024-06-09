@@ -93,7 +93,7 @@ const About = (props: Props) => {
             <div className="flex flex-col items-center mt-48 gap-20">
               <AboutSectionTitle title="My Tech Stack" />
 
-              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 gap-3 text-custom-dark-light/80 dark:text-custom-white-dark/80">
+              <div className="grid grid-cols-3 md:grid-cols-4 xl:grid-cols-5 gap-3 text-custom-dark-light/80 dark:text-custom-white-dark/80">
                 <TechStackLabel label="Frontend /Web Design" />
 
                 {TechStackData.filter((a) => a.type === "frontend")
@@ -128,7 +128,7 @@ const TechStackLabel = (props: LabelProps) => {
   return (
     <div
       className="bg-slate-100/70 shadow-2xl shadow-slate-500/30 dark:shadow-slate-700/30 dark:bg-slate-800/70 relative flex items-center justify-center 
-      rounded-xl h-12 font-bold  col-span-2 sm:col-span-3 md:col-span-4 xl:col-span-5 backdrop-blur-sm"
+      rounded-xl h-12 font-bold  col-span-3 md:col-span-4 xl:col-span-5 backdrop-blur-sm"
     >
       {props.label}
     </div>

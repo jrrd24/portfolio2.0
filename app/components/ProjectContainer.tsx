@@ -74,7 +74,7 @@ const ProjectContainer = (props: Props) => {
               {props.data.title}
             </h1>
             {/**Link */}
-            <div className="mt-4 flex flex-wrap gap-2">
+            <div className="flex lg:mt-2 flex-wrap gap-2">
               <TagLink link={props.data.link} />
             </div>
             {/**Description */}

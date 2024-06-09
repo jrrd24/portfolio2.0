@@ -19,6 +19,7 @@ import {
   SiPrisma,
   SiPostman,
   SiCsharp,
+  SiVercel,
 } from "react-icons/si";
 import { RiNextjsFill } from "react-icons/ri";
 import { GrMysql } from "react-icons/gr";
@@ -201,7 +202,7 @@ const TechStackData = [
     Icon: SiPostman,
     logo: "/assets/logos/postman.svg",
     link: "https://www.postman.com/",
-    order: 2,
+    order: 3,
     type: "other",
   },
 
@@ -210,7 +211,16 @@ const TechStackData = [
     Icon: SiCsharp,
     logo: "/assets/logos/csharp.svg",
     link: "https://learn.microsoft.com/en-us/dotnet/csharp/",
-    order: 3,
+    order: 4,
+    type: "other",
+  },
+
+  {
+    id: 22,
+    Icon: SiVercel,
+    logo: "/assets/logos/vercel.svg",
+    link: "https://vercel.com/",
+    order: 2,
     type: "other",
   },
 ];
