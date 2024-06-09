@@ -9,7 +9,7 @@ type Props = {};
 
 function Hero({}: Props) {
   return (
-    <section className="min-h-screen container relative">
+    <section className="min-h-dvh container relative">
       {/* Bottom Circle */}
       <div
         className="rounded-full bg-radial-circle from-custom-red/30 dark:from-custom-red/40 from-0% via-custom-red/20 dark:via-custom-red/30 via-25% to-transparent to-70% 
@@ -26,7 +26,7 @@ function Hero({}: Props) {
       </div>
 
       <div className="xl:my-48 px-8 grid grid-cols-12 gap-0 w-screen container z-10 relative">
-        <div className="sticky top-0 h-screen items-center w-48 lg:col-start-1 lg:col-end-2 hidden lg:flex">
+        <div className="sticky top-0 h-dvh items-center w-48 lg:col-start-1 lg:col-end-2 hidden lg:flex">
           <SectionNameImage
             lightImage="/assets/section_wordmark/projects_dark.svg"
             darkImage="/assets/section_wordmark/projects.svg"

@@ -8,7 +8,7 @@ type Props = {};
 
 const Contact = (props: Props) => {
   return (
-    <section className="min-h-screen container relative">
+    <section className="min-h-dvh container relative">
       {/* Middle Circle */}
       <div
         className="rounded-full bg-radial-circle from-custom-orange/30 dark:from-custom-orange/40 from-0% via-custom-orange/20 dark:via-custom-orange/30 via-25% to-transparent to-70% 
@@ -32,7 +32,7 @@ const Contact = (props: Props) => {
         <div id="contact" className="md:px-8  w-full ">
           <div className=" flex flex-col gap-24 items-center md:px-4 lg:px-12 z-20 relative">
             {/**Interested?*/}
-            <div className=" text-center flex flex-col items-center justify-center h-screen xl:max-h-[1280px] text-custom-dark-light/80 dark:text-custom-white-dark/80">
+            <div className=" text-center flex flex-col items-center justify-center h-dvh xl:max-h-[1280px] text-custom-dark-light/80 dark:text-custom-white-dark/80">
               <div
                 className="mt-2 font-bold text-5xl md:text-6xl  lg:text-7xl w-fit h-full-pb bg-clip-text
               text-transparent bg-gradient-flow bg-[length:200%_auto] animate-gradient "
@@ -44,7 +44,7 @@ const Contact = (props: Props) => {
                 Connect With Me
               </h3>
 
-              <div className="flex gap-4 mt-4">
+              <div className="flex gap-4 mt-4 max-w-[200px]">
                 {ContactData.sort((a, b) => a.order - b.order).map((data) => (
                   <Link href={data.link} target="blank" key={data.id}>
                     <data.Icon className="h-6 w-full hover:text-custom-dark dark:hover:text-custom-white" />
