@@ -47,21 +47,21 @@ export default function RootLayout({
         />
 
         {/**opengraph image */}
-        <meta property="og:image" content="<generated>" />
+        <meta property="og:image" content="/opengraph-image?<generated>" />
         <meta property="og:image:type" content="<generated>" />
         <meta property="og:image:width" content="<generated>" />
         <meta property="og:image:height" content="<generated>" />
         <meta property="og:image:alt" content="About Jerard Pagalilauan" />
 
         {/**twitter image */}
-        <meta name="twitter:image" content="<generated>" />
+        <meta name="twitter:image" content="/twitter-image?<generated>" />
         <meta name="twitter:image:type" content="<generated>" />
         <meta name="twitter:image:width" content="<generated>" />
         <meta name="twitter:image:height" content="<generated>" />
         <meta property="twitter:image:alt" content="About Jerard Pagalilauan" />
       </head>
       <body
-        className={`${poppins.variable} relative min-h-screen bg-custom-white-dark dark:bg-custom-dark`}
+        className={`${poppins.variable} relative min-h-dvh bg-custom-white-dark dark:bg-custom-dark`}
       >
         {children}
       </body>

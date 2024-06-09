@@ -43,7 +43,7 @@ const Navbar = (props: Props) => {
       </div>
       <div
         className={`w-screen lg:hidden container mt-0 lg:mt-8 px-8 flex flex-col justify-between items-end  ${
-          openMenu ? "block h-screen " : "hidden backdrop-blur-none h-0"
+          openMenu ? "block h-dvh " : "hidden backdrop-blur-none h-0"
         }`}
       >
         <ul className="text-right space-y-8 pt-36">

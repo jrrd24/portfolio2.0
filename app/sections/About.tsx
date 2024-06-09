@@ -16,7 +16,7 @@ type LabelProps = {
 
 const About = (props: Props) => {
   return (
-    <section className="min-h-screen container relative">
+    <section className="min-h-dvh container relative">
       {/* Bottom Circle */}
       <div
         className="rounded-full bg-radial-circle from-custom-red/30 dark:from-custom-red/40 from-0% via-custom-red/20 dark:via-custom-red/30 via-25% to-transparent to-70% 
@@ -33,7 +33,7 @@ const About = (props: Props) => {
       </div>
 
       <div className="  grid grid-cols-12 px-8 gap-0 w-screen container z-10">
-        <div className="sticky top-0 h-screen items-center w-14 lg:col-start-1 lg:col-end-2 hidden lg:flex z-20">
+        <div className="sticky top-0 h-dvh items-center w-14 lg:col-start-1 lg:col-end-2 hidden lg:flex z-20">
           <SectionNameImage
             lightImage="/assets/section_wordmark/about_dark.svg"
             darkImage="/assets/section_wordmark/about.svg"
@@ -48,7 +48,7 @@ const About = (props: Props) => {
         >
           <div className="flex flex-col md:gap-24 items-center md:px-4 lg:px-12 z-20 relative">
             {/**Who Am I */}
-            <div className=" text-left flex flex-col justify-center align-middle h-screen xl:max-h-[1280px]">
+            <div className=" text-left flex flex-col justify-center align-middle h-dvh xl:max-h-[1280px]">
               <h3 className="text-xl md:text-2xl  lg:text-3xl font-medium">
                 Hi. I&apos;m
               </h3>
