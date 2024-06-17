@@ -229,7 +229,7 @@ const TechStackData = [
     id: 23,
     Icon: FaBootstrap,
     logo: "/assets/logos/bootstrap.svg",
-    link: "https://vercel.com/",
+    link: "https://getbootstrap.com/",
     order: 8,
     type: "frontend",
   },
