@@ -55,8 +55,6 @@ const ProjectContainer = (props: Props) => {
           <div
             className={` w-full xl:w-72 h-72 md:h-96 rounded-t-2xl rounded-b-none xl:rounded-2xl col-span-4 xl:col-span-2`}
           >
-          swiper
-          
             <ProjectImage
               logo={props.data.logo}
               thumbnail={props.data.thumbnail}
