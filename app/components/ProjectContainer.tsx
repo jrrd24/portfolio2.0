@@ -26,6 +26,7 @@ type Tags = {
   id: number;
   name: string;
   order: number;
+  Icon?: React.ElementType;
 };
 
 type Responsibilities = {
@@ -38,7 +39,7 @@ const ProjectContainer = (props: Props) => {
   return (
     <div className="my-24 xl:h-screen xl:max-h-[1280px] flex items-center justify-center group">
       <div
-        className="my-0 xl:my-32 xl:py-20 max-w-[28rem] xl:w-[56rem] xl:max-w-none rounded-3xl h-fit 
+        className="my-0 xl:my-32 xl:py-20 max-w-[28rem] xl:w-[56rem] xl:max-w-none rounded-3xl h-fit w-full
       bg-slate-100/70 shadow-2xl shadow-slate-500/30 dark:shadow-slate-700/30 dark:bg-slate-800/70  relative"
       >
         {/**Number */}
@@ -54,6 +55,8 @@ const ProjectContainer = (props: Props) => {
           <div
             className={` w-full xl:w-72 h-72 md:h-96 rounded-t-2xl rounded-b-none xl:rounded-2xl col-span-4 xl:col-span-2`}
           >
+          swiper
+          
             <ProjectImage
               logo={props.data.logo}
               thumbnail={props.data.thumbnail}
@@ -61,7 +64,7 @@ const ProjectContainer = (props: Props) => {
             />
           </div>
           {/**Content */}
-          <div className="col-span-4 xl:col-span-2 px-4  pb-6 pt-2 xl:pr-16">
+          <div className="col-span-4 xl:col-span-2 px-4  pb-6 pt-2 xl:pr-16 w-full">
             {/**Title */}
             <h1
               className={
@@ -98,7 +101,7 @@ const ProjectContainer = (props: Props) => {
               {props.data.tags
                 ?.sort((a, b) => a.order - b.order)
                 .map((data) => (
-                  <Tag key={data.id} name={data.name} />
+                  <Tag key={data.id} name={data.name} Icon={data.Icon} />
                 ))}
             </div>
           </div>
