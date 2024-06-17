@@ -1,3 +1,32 @@
+import { BiLogoTypescript } from "react-icons/bi";
+import { DiDotnet } from "react-icons/di";
+import {
+  FaBootstrap,
+  FaCss3Alt,
+  FaFigma,
+  FaHtml5,
+  FaNodeJs,
+  FaReact,
+} from "react-icons/fa6";
+import { GrMysql } from "react-icons/gr";
+import { IoLogoJavascript, IoLogoVercel } from "react-icons/io5";
+import {
+  RiNextjsFill,
+  RiSupabaseFill,
+  RiTailwindCssFill,
+} from "react-icons/ri";
+import {
+  SiCsharp,
+  SiExpress,
+  SiGooglegemini,
+  SiMui,
+  SiNextui,
+  SiPrisma,
+  SiShadcnui,
+  SiSwiper,
+} from "react-icons/si";
+import { TbFileTypeXml, TbLetterK } from "react-icons/tb";
+
 const ProjectsData = [
   {
     id: 1,
@@ -12,13 +41,13 @@ const ProjectsData = [
     gradientColorDark: "bg-gradient-scaleup-dark",
     gradientColorLight: "bg-gradient-scaleup-light",
     tags: [
-      { id: 1, name: "ASP.net", order: 1 },
-      { id: 2, name: "HTML", order: 2 },
-      { id: 3, name: "JavaScript", order: 3 },
-      { id: 4, name: "CSS", order: 4 },
-      { id: 5, name: "Bootstrap 4.6", order: 5 },
-      { id: 6, name: "Figma", order: 6 },
-      { id: 7, name: "Swiper JS", order: 7 },
+      { id: 1, name: "ASP.net", Icon: DiDotnet, order: 1 },
+      { id: 2, name: "HTML", Icon: FaHtml5, order: 2 },
+      { id: 3, name: "JavaScript", Icon: IoLogoJavascript, order: 3 },
+      { id: 4, name: "CSS", Icon: FaCss3Alt, order: 4 },
+      { id: 5, name: "Bootstrap 4.6", Icon: FaBootstrap, order: 5 },
+      { id: 6, name: "Figma", Icon: FaFigma, order: 6 },
+      { id: 7, name: "Swiper Js", Icon: SiSwiper, order: 7 },
     ],
     responsibilities: [
       { id: 1, name: "🎨 Web Designer", order: 1 },
@@ -39,13 +68,13 @@ const ProjectsData = [
     gradientColorDark: "bg-gradient-printToScale-dark",
     gradientColorLight: "bg-gradient-printToScale-light",
     tags: [
-      { id: 1, name: "ASP.net", order: 1 },
-      { id: 2, name: "HTML", order: 2 },
-      { id: 3, name: "JavaScript", order: 3 },
-      { id: 4, name: "CSS", order: 4 },
-      { id: 5, name: "Bootstrap 4.6", order: 5 },
-      { id: 6, name: "Figma", order: 6 },
-      { id: 7, name: "Swiper JS", order: 7 },
+      { id: 1, name: "ASP.net", Icon: DiDotnet, order: 1 },
+      { id: 2, name: "HTML", Icon: FaHtml5, order: 2 },
+      { id: 3, name: "JavaScript", Icon: IoLogoJavascript, order: 3 },
+      { id: 4, name: "CSS", Icon: FaCss3Alt, order: 4 },
+      { id: 5, name: "Bootstrap 4.6", Icon: FaBootstrap, order: 5 },
+      { id: 6, name: "Figma", Icon: FaFigma, order: 6 },
+      { id: 7, name: "Swiper Js", Icon: SiSwiper, order: 7 },
     ],
     responsibilities: [
       { id: 1, name: "🎨 Web Designer", order: 1 },
@@ -66,13 +95,13 @@ const ProjectsData = [
     gradientColorDark: "bg-gradient-kaya-dark",
     gradientColorLight: "bg-gradient-kaya-light",
     tags: [
-      { id: 1, name: "NextJS", order: 1 },
-      { id: 2, name: "Gemini AI", order: 2 },
-      { id: 3, name: "Kinde", order: 3 },
-      { id: 4, name: "Prisma", order: 4 },
-      { id: 5, name: "Supabase", order: 5 },
-      { id: 6, name: "NextUI", order: 6 },
-      { id: 7, name: "shadcn/ui", order: 7 },
+      { id: 1, name: "NextJs", Icon: RiNextjsFill, order: 1 },
+      { id: 2, name: "Gemini AI", Icon: SiGooglegemini, order: 2 },
+      { id: 3, name: "Kinde", Icon: TbLetterK, order: 3 },
+      { id: 4, name: "Prisma", Icon: SiPrisma, order: 4 },
+      { id: 5, name: "Supabase", Icon: RiSupabaseFill, order: 5 },
+      { id: 6, name: "NextUI", Icon: SiNextui, order: 6 },
+      { id: 7, name: "shadcn/ui", Icon: SiShadcnui, order: 7 },
     ],
     responsibilities: [
       { id: 1, name: "👷‍♂️ Full-Stack Developer", order: 1 },
@@ -93,12 +122,12 @@ const ProjectsData = [
     gradientColorDark: "bg-gradient-lokal360-dark",
     gradientColorLight: "bg-gradient-lokal360-light",
     tags: [
-      { id: 1, name: "ReactJS", order: 1 },
-      { id: 2, name: "NodeJS", order: 2 },
-      { id: 3, name: "ExpressJS", order: 3 },
-      { id: 4, name: "MySQL", order: 4 },
-      { id: 5, name: "Material UI", order: 5 },
-      { id: 5, name: "Figma", order: 5 },
+      { id: 1, name: "ReactJs", Icon: FaReact, order: 1 },
+      { id: 2, name: "NodeJs", Icon: FaNodeJs, order: 2 },
+      { id: 3, name: "ExpressJs", Icon: SiExpress, order: 3 },
+      { id: 4, name: "MySQL", Icon: GrMysql, order: 4 },
+      { id: 5, name: "Material UI", Icon: SiMui, order: 5 },
+      { id: 5, name: "Figma", Icon: FaFigma, order: 5 },
     ],
     responsibilities: [
       { id: 1, name: "👷‍♂️ Full-Stack Developer", order: 1 },
@@ -121,10 +150,10 @@ const ProjectsData = [
     gradientColorDark: "bg-gradient-mtmc-dark",
     gradientColorLight: "bg-gradient-mtmc-light",
     tags: [
-      { id: 1, name: "C# (Windows Forms App)", order: 1 },
-      { id: 2, name: ".NET Framework", order: 2 },
-      { id: 3, name: "MySQL", order: 3 },
-      { id: 4, name: "OpenXML", order: 4 },
+      { id: 1, name: "C# (Windows Forms App)", Icon: SiCsharp, order: 1 },
+      { id: 2, name: ".NET Framework", Icon: DiDotnet, order: 2 },
+      { id: 3, name: "MySQL", Icon: GrMysql, order: 3 },
+      { id: 4, name: "OpenXML", Icon: TbFileTypeXml, order: 4 },
     ],
     responsibilities: [
       { id: 1, name: "👷‍♂️ Full-Stack Developer", order: 1 },
@@ -147,10 +176,11 @@ const ProjectsData = [
     gradientColorDark: "bg-gradient-portfolio2-dark",
     gradientColorLight: "bg-gradient-portfolio2-light",
     tags: [
-      { id: 1, name: "NextJS 14", order: 1 },
-      { id: 2, name: "Tailwind", order: 2 },
-      { id: 3, name: "Vercel", order: 3 },
-      { id: 4, name: "Figma", order: 4 },
+      { id: 1, name: "NextJs", Icon: RiNextjsFill, order: 1 },
+      { id: 2, name: "Tailwind", Icon: RiTailwindCssFill, order: 2 },
+      { id: 3, name: "Vercel", Icon: IoLogoVercel, order: 4 },
+      { id: 4, name: "Figma", Icon: FaFigma, order: 5 },
+      { id: 5, name: "TypeScript", Icon: BiLogoTypescript, order: 3 },
     ],
     responsibilities: [
       { id: 1, name: "👷‍♂️ Front-End Developer", order: 1 },
