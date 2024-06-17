@@ -24,7 +24,9 @@ const config: Config = {
     'group-hover:bg-gradient-printToScale-light',
     'dark:group-hover:bg-gradient-printToScale-dark',
     'group-hover:bg-gradient-mtmc-light',
-    'dark:group-hover:bg-gradient-mtmc-dark'
+    'dark:group-hover:bg-gradient-mtmc-dark',
+     'group-hover:bg-gradient-portfolio2-light',
+    'dark:group-hover:bg-gradient-portfolio2-dark'
   ],
   theme: {
     extend: {
@@ -41,7 +43,9 @@ const config: Config = {
         'gradient-printToScale-dark': 'linear-gradient(to right, #F8F8FF, #F8F8FF, #48A26A, #48A26A, #F8F8FF, #F8F8FF)',
         'gradient-printToScale-light': 'linear-gradient(to right, #1B1B1F, #1B1B1F, #006D3A, #006D3A, #1B1B1F, #1B1B1F)',
         'gradient-mtmc-dark': 'linear-gradient(to right, #F8F8FF, #F8F8FF, #8C5E87, #8C5E87, #F8F8FF, #F8F8FF)',
-        'gradient-mtmc-light': 'linear-gradient(to right, #1B1B1F, #1B1B1F, #6E1269, #6E1269, #1B1B1F, #1B1B1F)'
+        'gradient-mtmc-light': 'linear-gradient(to right, #1B1B1F, #1B1B1F, #6E1269, #6E1269, #1B1B1F, #1B1B1F)',
+        'gradient-portfolio2-dark': 'linear-gradient(to right, #F8F8FF, #F8F8FF, #F3A07D, #F3A07D, #F8F8FF, #F8F8FF)',
+        'gradient-portfolio2-light': 'linear-gradient(to right, #1B1B1F, #1B1B1F, #F3A07D, #F3A07D, #1B1B1F, #1B1B1F)'
       },
 
       colors: {
