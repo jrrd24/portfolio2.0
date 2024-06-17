@@ -1,5 +1,6 @@
 import { TiHtml5 } from "react-icons/ti";
 import {
+  FaBootstrap,
   FaCss3Alt,
   FaFigma,
   FaGithub,
@@ -76,7 +77,7 @@ const TechStackData = [
     Icon: SiMui,
     logo: "/assets/logos/mui.svg",
     link: "https://mui.com/",
-    order: 8,
+    order: 9,
     type: "frontend",
   },
 
@@ -85,7 +86,7 @@ const TechStackData = [
     Icon: SiNextui,
     logo: "/assets/logos/nextui.svg",
     link: "https://nextui.org/",
-    order: 9,
+    order: 10,
     type: "frontend",
   },
 
@@ -94,7 +95,7 @@ const TechStackData = [
     Icon: SiDaisyui,
     logo: "/assets/logos/daisyui.svg",
     link: "https://daisyui.com/",
-    order: 10,
+    order: 11,
     type: "frontend",
   },
 
@@ -103,7 +104,7 @@ const TechStackData = [
     Icon: FaFigma,
     logo: "/assets/logos/figma.svg",
     link: "https://www.figma.com/",
-    order: 11,
+    order: 12,
     type: "frontend",
   },
 
@@ -222,6 +223,15 @@ const TechStackData = [
     link: "https://vercel.com/",
     order: 2,
     type: "other",
+  },
+
+  {
+    id: 23,
+    Icon: FaBootstrap,
+    logo: "/assets/logos/bootstrap.svg",
+    link: "https://vercel.com/",
+    order: 8,
+    type: "frontend",
   },
 ];
 export default TechStackData;
