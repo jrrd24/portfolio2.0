@@ -20,6 +20,7 @@ export default function Home() {
         bg-gradient-to-tr from-slate-300 to-custom-white  dark:from-slate-900 dark:to-zinc-950  
         h-dvh overflow-x-hidden text-custom-dark dark:text-custom-white font-poppins "
       >
+        
         <Navbar />
         <div id="home" className="grid lg:grid-cols-2 w-screen ">
           <div

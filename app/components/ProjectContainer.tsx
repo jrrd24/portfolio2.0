@@ -14,6 +14,7 @@ type Data = {
   thumbnail: string;
   title: string;
   link?: string;
+  employerDescription?: string;
   description: string;
   contrastColor: string;
   gradientColorDark?: string;
@@ -79,7 +80,10 @@ const ProjectContainer = (props: Props) => {
               <TagLink link={props.data.link} />
             </div>
             {/**Description */}
-            <h3 className=" text-sm md:text-base mt-4 text-custom-dark-light/80 dark:text-custom-white-dark/80">
+            <h3 className=" text-sm md:text-base mt-6 text-custom-dark-light/80 dark:text-custom-white-dark/80">
+              <span className=" font-semibold text-base md:text-md">
+                {props.data.employerDescription}{" "}
+              </span>
               {props.data.description}
             </h3>
 

@@ -17,7 +17,7 @@ function Hero({}: Props) {
   }, [theme]);
 
   return (
-    <section className="h-dvh  max-h-[1280px] relative container flex items-center w-full select-none">
+    <section className="h-dvh  max-h-[1280px] relative container flex items-center w-full select-none ">
       {/* Top Circle */}
       <div
         className="rounded-full bg-radial-circle from-custom-orange/50  dark:from-custom-orange/40 from-0% via-custom-orange/40  dark:via-custom-orange/30
