@@ -1,10 +1,21 @@
-import Image from "next/image";
-import React from "react";
-import ServicesData from "../data/ServicesData";
+"use client";
+
+import { useEffect, useState } from "react";
+import { useTheme } from "next-themes";
+import ServicesData from "@/app/data/ServicesData";
+
+import Particles from "@/components/magicui/particles";
 
 type Props = {};
 
 function Hero({}: Props) {
+  const { theme } = useTheme();
+  const [color, setColor] = useState("#ffffff");
+
+  useEffect(() => {
+    setColor(theme === "dark" ? "#ffffff" : "#000000");
+  }, [theme]);
+
   return (
     <section className="h-dvh  max-h-[1280px] relative container flex items-center w-full select-none">
       {/* Top Circle */}
@@ -60,6 +71,13 @@ function Hero({}: Props) {
           </div>
         </div>
       </div>
+      <Particles
+        className="absolute inset-0"
+        quantity={100}
+        ease={80}
+        color={color}
+        refresh
+      />
     </section>
   );
 }

@@ -7,7 +7,6 @@ import Sidebar from "./components/Sidebar";
 import About from "./sections/About";
 import Contact from "./sections/Contact";
 import Footer from "./components/Footer";
-import ParticlesDemo from "./components/magicUi/ParticlesDemo";
 
 export const metadata: Metadata = {
   title: "Jerard Pagalilauan",
@@ -27,7 +26,6 @@ export default function Home() {
             className=" w-full lg:col-start-1  lg:col-span-11 2xl:col-span-12 lg:col-end-11 2xl:col-end-12 
             flex flex-col items-center justify-items-center"
           >
-            <ParticlesDemo />
             <Hero />
             <Projects />
             <About />

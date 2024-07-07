@@ -1,12 +1,22 @@
-import React from "react";
-import SectionNameImage from "../components/SectionNameImage";
-import { FaFacebook } from "react-icons/fa6";
-import ContactData from "../data/ContactData";
+"use client";
+
+import { useEffect, useState } from "react";
+import { useTheme } from "next-themes";
+
+import Particles from "@/components/magicui/particles";
+import ContactData from "@/app/data/ContactData";
 import Link from "next/link";
 
 type Props = {};
 
 const Contact = (props: Props) => {
+  const { theme } = useTheme();
+  const [color, setColor] = useState("#ffffff");
+
+  useEffect(() => {
+    setColor(theme === "dark" ? "#ffffff" : "#000000");
+  }, [theme]);
+
   return (
     <section className="min-h-dvh container relative">
       {/* Middle Circle */}
@@ -55,6 +65,13 @@ const Contact = (props: Props) => {
           </div>
         </div>
       </div>
+      <Particles
+        className="absolute inset-0"
+        quantity={100}
+        ease={80}
+        color={color}
+        refresh
+      />
     </section>
   );
 };
