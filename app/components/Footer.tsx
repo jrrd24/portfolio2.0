@@ -14,9 +14,7 @@ const Footer = (props: Props) => {
           </span>{" "}
           Web Portfolio v2.0
         </div>
-        <div className=" text-xs lg:text-sm">
-          Copyright © {year} Jerard Pagalilauan
-        </div>
+        <div className=" text-xs lg:text-sm">© {year} Jerard Pagalilauan</div>
       </div>
     </footer>
   );

@@ -7,9 +7,7 @@ import Particles from "@/components/magicui/particles";
 import ContactData from "@/app/data/ContactData";
 import Link from "next/link";
 
-type Props = {};
-
-const Contact = (props: Props) => {
+const ParticlesDemo = () => {
   const { theme } = useTheme();
   const [color, setColor] = useState("#ffffff");
 
@@ -18,7 +16,7 @@ const Contact = (props: Props) => {
   }, [theme]);
 
   return (
-    <section className="min-h-dvh container relative">
+    <div className="min-h-dvh container relative">
       {/* Middle Circle */}
       <div
         className="rounded-full bg-radial-circle from-custom-orange/30 dark:from-custom-orange/40 from-0% via-custom-orange/20 dark:via-custom-orange/30 via-25% to-transparent to-70% 
@@ -72,8 +70,8 @@ const Contact = (props: Props) => {
         color={color}
         refresh
       />
-    </section>
+    </div>
   );
 };
 
-export default Contact;
+export default ParticlesDemo;

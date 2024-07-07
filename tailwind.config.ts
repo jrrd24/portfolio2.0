@@ -12,7 +12,7 @@ const config: Config = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/**/*.{ts,tsx}"
-  ],
+	],  
   darkMode:'class',
   safelist:[
     'group-hover:bg-gradient-kaya-light',
@@ -25,10 +25,18 @@ const config: Config = {
     'dark:group-hover:bg-gradient-printToScale-dark',
     'group-hover:bg-gradient-mtmc-light',
     'dark:group-hover:bg-gradient-mtmc-dark',
-     'group-hover:bg-gradient-portfolio2-light',
+    'group-hover:bg-gradient-portfolio2-light',
     'dark:group-hover:bg-gradient-portfolio2-dark'
   ],
+  
+  prefix: "",
   theme: {
+    container: {
+      center: true,
+      screens: {
+        "2xl": "1400px",
+      },
+    },
     extend: {
       backgroundImage: {
         'radial-circle': 'radial-gradient(circle at center, var(--tw-gradient-stops))',
@@ -47,8 +55,40 @@ const config: Config = {
         'gradient-portfolio2-dark': 'linear-gradient(to right, #F8F8FF, #F8F8FF, #F3A07D, #F3A07D, #F8F8FF, #F8F8FF)',
         'gradient-portfolio2-light': 'linear-gradient(to right, #1B1B1F, #1B1B1F, #F3A07D, #F3A07D, #1B1B1F, #1B1B1F)'
       },
-
       colors: {
+        border: "hsl(var(--border))",
+        input: "hsl(var(--input))",
+        ring: "hsl(var(--ring))",
+        background: "hsl(var(--background))",
+        foreground: "hsl(var(--foreground))",
+        primary: {
+          DEFAULT: "hsl(var(--primary))",
+          foreground: "hsl(var(--primary-foreground))",
+        },
+        secondary: {
+          DEFAULT: "hsl(var(--secondary))",
+          foreground: "hsl(var(--secondary-foreground))",
+        },
+        destructive: {
+          DEFAULT: "hsl(var(--destructive))",
+          foreground: "hsl(var(--destructive-foreground))",
+        },
+        muted: {
+          DEFAULT: "hsl(var(--muted))",
+          foreground: "hsl(var(--muted-foreground))",
+        },
+        accent: {
+          DEFAULT: "hsl(var(--accent))",
+          foreground: "hsl(var(--accent-foreground))",
+        },
+        popover: {
+          DEFAULT: "hsl(var(--popover))",
+          foreground: "hsl(var(--popover-foreground))",
+        },
+        card: {
+          DEFAULT: "hsl(var(--card))",
+          foreground: "hsl(var(--card-foreground))",
+        },
         'transparent':'transparent',
         'custom-white':{
           DEFAULT:'#F8F8FF',
@@ -72,17 +112,23 @@ const config: Config = {
           dark:'#A4A4A5'
         },
       },
-
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
       },
-
-      animation: {
-        'gradient': 'gradient 5s linear infinite',
-        'infinite-scroll': 'infinite-scroll 25s linear infinite',
+      borderRadius: {
+        lg: "var(--radius)",
+        md: "calc(var(--radius) - 2px)",
+        sm: "calc(var(--radius) - 4px)",
       },
-      
       keyframes: {
+        "accordion-down": {
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
+        },
+        "accordion-up": {
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
+        },
         'gradient': {
           to: { 'background-position': '200% center' },
         },
@@ -91,7 +137,12 @@ const config: Config = {
           to: { transform: 'translateX(-100%)' },
         }
       },
-
+      animation: {
+        "accordion-down": "accordion-down 0.2s ease-out",
+        "accordion-up": "accordion-up 0.2s ease-out",
+        'gradient': 'gradient 5s linear infinite',
+        'infinite-scroll': 'infinite-scroll 25s linear infinite',
+      },
       screens:{
         '2xl': '1400px',
       },
@@ -99,11 +150,10 @@ const config: Config = {
       letterSpacing: {
         tightest: '-.099em',
       }
-
-    }, 
+    },
   },
-  plugins: [addVariablesForColors, require("flowbite/plugin")],
-};
+  plugins: [require("tailwindcss-animate"),addVariablesForColors, require("flowbite/plugin")],
+} satisfies Config
 
 function addVariablesForColors({ addBase, theme }: any) {
   let allColors = flattenColorPalette(theme("colors"));
@@ -116,4 +166,4 @@ function addVariablesForColors({ addBase, theme }: any) {
   });
 }
 
-export default config;
+export default config
