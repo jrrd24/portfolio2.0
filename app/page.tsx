@@ -7,6 +7,7 @@ import Sidebar from "./components/Sidebar";
 import About from "./sections/About";
 import Contact from "./sections/Contact";
 import Footer from "./components/Footer";
+import ParticlesDemo from "./components/magicUi/ParticlesDemo";
 
 export const metadata: Metadata = {
   title: "Jerard Pagalilauan",
@@ -20,13 +21,13 @@ export default function Home() {
         bg-gradient-to-tr from-slate-300 to-custom-white  dark:from-slate-900 dark:to-zinc-950  
         h-dvh overflow-x-hidden text-custom-dark dark:text-custom-white font-poppins "
       >
-        
         <Navbar />
         <div id="home" className="grid lg:grid-cols-2 w-screen ">
           <div
             className=" w-full lg:col-start-1  lg:col-span-11 2xl:col-span-12 lg:col-end-11 2xl:col-end-12 
             flex flex-col items-center justify-items-center"
           >
+            <ParticlesDemo />
             <Hero />
             <Projects />
             <About />

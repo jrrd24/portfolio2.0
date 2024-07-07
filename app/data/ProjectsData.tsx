@@ -26,12 +26,13 @@ import {
   SiSwiper,
 } from "react-icons/si";
 import { TbFileTypeXml, TbLetterK } from "react-icons/tb";
+
 const ProjectsData = [
   {
     id: 1,
     title: "ScaleUp Solutions",
-    employerDescription: "A ScaleUp Solutions project.",
-    description: "The company website of ScaleUp Solutions Inc.",
+    description:
+      "The company website of ScaleUp Solutions Inc, A software services company that provides business solutions that scale up SME digitalization to improve quality of services.",
     logo: "/assets/projects/logo/scaleup_logo.png",
     thumbnail: "/assets/projects/thumbnail/scaleup_thumbnail.png",
     link: "https://www.scaleupsolutions.ph/",
@@ -53,11 +54,12 @@ const ProjectsData = [
       { id: 2, name: "👷‍♂️ Front-End Developer", order: 2 },
     ],
   },
+
   {
     id: 2,
     title: "Print To Scale",
-    employerDescription: "A ScaleUp Solutions project.",
-    description: "The company website of Print To Scale. ",
+    description:
+      "The website of Print To Scale, formerly known as Horizon Printers, the company is a trusted name in the offset printing industry. ",
     logo: "/assets/projects/logo/printToScale_logo.png",
     thumbnail: "/assets/projects/thumbnail/printToScale_thumbnail.png",
     link: "https://www.printtoscale.ph/",
@@ -79,10 +81,10 @@ const ProjectsData = [
       { id: 2, name: "👷‍♂️ Front-End Developer", order: 2 },
     ],
   },
+
   {
     id: 3,
     title: "Kaya",
-    employerDescription: undefined,
     description:
       "KAYA is your one-stop app for teachers and universities to connect with talent and empower professional growth!",
     logo: "/assets/projects/logo/kaya_logo.png",
@@ -106,10 +108,10 @@ const ProjectsData = [
       { id: 2, name: "⚙️ Database Designer", order: 2 },
     ],
   },
+
   {
     id: 4,
     title: "Lokal 360",
-    employerDescription: undefined,
     description:
       "Lokal 360 is a web app designed to empower local businesses by connecting consumers with nearby businesses, fostering a sense of community and encouraging local commerce.",
     logo: "/assets/projects/logo/lokal360_logo.png",
@@ -134,13 +136,12 @@ const ProjectsData = [
       { id: 4, name: "⭐ Project Lead", order: 4 },
     ],
   },
+
   {
     id: 5,
-    title: "MTMC Mgmt System",
-    employerDescription:
-      "A Freelance Project for the Metro Tuguegarao Multi-Purpose Cooperative.",
+    title: "MTMC Management System",
     description:
-      "A management system for the day-to-day tasks of the cooperative.",
+      "A management system for the day-to-day tasks of the Metro Tuguegarao Multi-Purpose Cooperative.",
     logo: "/assets/projects/logo/coop_logo.png",
     thumbnail: "/assets/projects/thumbnail/coop_thumbnail.png",
     link: undefined,
@@ -162,10 +163,10 @@ const ProjectsData = [
       { id: 5, name: "⚒️ System Deployment", order: 5 },
     ],
   },
+
   {
     id: 6,
     title: "Portfolio 2.0",
-    employerDescription: undefined,
     description: "My personal web portfolio.",
     logo: "/assets/projects/logo/portfolio2_logo.png",
     thumbnail: "/assets/projects/thumbnail/portfolio2_thumbnail.png",
@@ -188,4 +189,5 @@ const ProjectsData = [
     ],
   },
 ];
+
 export default ProjectsData;
