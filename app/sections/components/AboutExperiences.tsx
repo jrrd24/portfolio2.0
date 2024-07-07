@@ -2,7 +2,6 @@
 import ExperienceContainer from "@/app/components/ExperienceContainer";
 import Image from "next/image";
 import { twMerge } from "tailwind-merge";
-import { TracingBeam } from "@/app/components/ui/tracing-beam";
 import React from "react";
 import ExperienceData from "@/app/data/ExperienceData";
 
