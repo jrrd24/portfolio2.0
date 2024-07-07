@@ -7,7 +7,8 @@ export default function DarkModeButton() {
   const [mounted, setMounted] = useState(false);
   useEffect(() => {
     setMounted(true);
-    setTheme("dark");
+    if (theme === "dark") setTheme("dark");
+    else setTheme("light");
   }, []);
 
   return (
