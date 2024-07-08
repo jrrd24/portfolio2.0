@@ -7,6 +7,16 @@ import Particles from "@/components/magicui/particles";
 import ContactData from "@/app/data/ContactData";
 import Link from "next/link";
 
+import { cn } from "@/lib/utils";
+import { buttonVariants } from "@/components/ui/button";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
+import { Dock, DockIcon } from "@/components/magicui/dock";
+import ContactContainer from "../components/Contact/ContactContainer";
+
 type Props = {};
 
 const Contact = (props: Props) => {
@@ -54,13 +64,7 @@ const Contact = (props: Props) => {
                 Connect With Me
               </h3>
 
-              <div className="flex gap-4 mt-4 max-w-[200px]">
-                {ContactData.sort((a, b) => a.order - b.order).map((data) => (
-                  <Link href={data.link} target="blank" key={data.id}>
-                    <data.Icon className="h-6 w-full hover:text-custom-dark dark:hover:text-custom-white" />
-                  </Link>
-                ))}
-              </div>
+              <ContactContainer />
             </div>
           </div>
         </div>
