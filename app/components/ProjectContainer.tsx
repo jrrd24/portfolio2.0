@@ -81,7 +81,7 @@ const ProjectContainer = (props: Props) => {
             </div>
             {/**Description */}
             <h3 className=" text-sm md:text-base mt-6 text-custom-dark-light/80 dark:text-custom-white-dark/80">
-              <span className=" font-semibold text-base md:text-md">
+              <span className=" font-semibold text-sm md:text-base">
                 {props.data.employerDescription}{" "}
               </span>
               {props.data.description}
