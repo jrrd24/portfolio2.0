@@ -135,13 +135,18 @@ const config: Config = {
         'infinite-scroll': {
           from: { transform: 'translateX(0)' },
           to: { transform: 'translateX(-100%)' },
-        }
+        },
+        grid: {
+          "0%": { transform: "translateY(-50%)" },
+          "100%": { transform: "translateY(0)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         'gradient': 'gradient 5s linear infinite',
         'infinite-scroll': 'infinite-scroll 25s linear infinite',
+        'grid': "grid 15s linear infinite",
       },
       screens:{
         '2xl': '1400px',

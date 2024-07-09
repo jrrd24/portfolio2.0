@@ -1,4 +1,3 @@
-"use client";
 import ExperienceContainer from "@/app/components/ExperienceContainer";
 import Image from "next/image";
 import { twMerge } from "tailwind-merge";
