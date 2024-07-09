@@ -47,8 +47,24 @@ function Hero({}: Props) {
                   {data.name} &emsp; ✗ &emsp;
                 </li>
               ))}
+              {ServicesData?.sort((a, b) => a.order - b.order).map((data) => (
+                <li
+                  key={data.id}
+                  className=" w-fit max-w-none whitespace-nowrap"
+                >
+                  {data.name} &emsp; ✗ &emsp;
+                </li>
+              ))}
             </ul>
             <ul className="flex items-center justify-center md:justify-start animate-infinite-scroll">
+              {ServicesData?.sort((a, b) => a.order - b.order).map((data) => (
+                <li
+                  key={data.id}
+                  className=" w-fit max-w-none whitespace-nowrap"
+                >
+                  {data.name} &emsp; ✗ &emsp;
+                </li>
+              ))}
               {ServicesData?.sort((a, b) => a.order - b.order).map((data) => (
                 <li
                   key={data.id}
