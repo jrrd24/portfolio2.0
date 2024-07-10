@@ -2,11 +2,11 @@ import React from "react";
 import SectionNameImage from "../components/SectionNameImage";
 import AboutSectionTitle from "../components/AboutSectionTitle";
 import ExperienceContainer from "../components/ExperienceContainer";
-import AboutExperiences from "./components/AboutExperiences";
 import AchievementContainer from "../components/AchievementContainer";
 import AchivementData from "../data/AchievementData";
 import TechStackContainer from "../components/TechStackContainer";
 import TechStackData from "../data/TechStackData";
+import ExperienceData from "../data/ExperienceData";
 
 type Props = {};
 
@@ -51,7 +51,11 @@ const About = (props: Props) => {
               {/**Professional Experience */}
               <div className="mt-24 lg:mt-48 flex flex-col items-center gap-8 md:gap-16">
                 <AboutSectionTitle title="My Professional Experience" />
-                <AboutExperiences />
+                {ExperienceData?.sort((a, b) => a.order - b.order).map(
+                  (data) => (
+                    <ExperienceContainer key={data.id} data={data} />
+                  )
+                )}
               </div>
 
               {/**Achievements */}

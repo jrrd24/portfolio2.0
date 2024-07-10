@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 type Props = {
@@ -5,6 +6,8 @@ type Props = {
 };
 
 type Data = {
+  logo: string;
+  color: string;
   company: string;
   job: string;
   duration: string;
@@ -20,11 +23,18 @@ type Responsibilities = {
 
 const ExperienceContainer = (props: Props) => {
   return (
-    <div
-      className="group my-8 p-6 py-8 sm:p-8 md:p-16 max-w-[24rem] xl:w-[50rem] md:max-w-none rounded-3xl h-fit
-bg-slate-100/50 shadow-2xl shadow-slate-500/30 dark:shadow-slate-700/30 dark:bg-slate-800/50  relative"
-    >
-      <div className="flex justify-between items-center  group-hover:bg-clip-text group-hover:text-transparent group-hover:bg-gradient-flow group-hover:bg-[length:200%_auto] group-hover:animate-gradient transition-all duration-300 ">
+    <div className="group p-6 py-8 sm:p-8 md:p-16 max-w-[24rem] xl:w-[50rem] md:max-w-none h-fit relative border-b-2 border-custom-dark-light/40 dark:border-custom-white-dark/40 ">
+      <Image
+        src={props.data.logo}
+        width={500}
+        height={500}
+        alt="achievement"
+        className=" transition aspect-square h-24  w-24 object-contain duration-500 rounded-2xl xl:rounded-xl p-3 mb-4 "
+        style={{
+          backgroundColor: props.data.color ? props.data.color : "#FFF",
+        }}
+      />
+      <div className="flex justify-between items-center">
         <h1 className="text-xl font-bold  ">{props.data.job}</h1>
         <p className=" text-base text-custom-dark-light/60 dark:text-custom-white-dark/60 hidden md:block">
           {props.data.duration}

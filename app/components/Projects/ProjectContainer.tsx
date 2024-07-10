@@ -1,8 +1,8 @@
-import React from "react";
-import Tag from "./Tag";
-import TagLink from "./TagLink";
 import Image from "next/image";
-import ProjectImage from "./ProjectImage";
+import React from "react";
+import { GoPlus } from "react-icons/go";
+import TagLink from "../TagLink";
+import Tag from "../Tag";
 
 type Props = {
   data: Data;
@@ -38,37 +38,29 @@ type Responsibilities = {
 
 const ProjectContainer = (props: Props) => {
   return (
-    <div className="my-24 xl:h-screen xl:max-h-[1280px] flex items-center justify-center group">
-      <div
-        className="my-0 xl:my-32 xl:py-20 max-w-[28rem] xl:w-[56rem] xl:max-w-none rounded-3xl h-fit w-full
-      bg-slate-100/70 shadow-2xl shadow-slate-500/30 dark:shadow-slate-700/30 dark:bg-slate-800/70  relative"
-      >
-        {/**Number */}
-        <div
-          className=" font-bold text-7xl sm:text-8xl xl:text-9xl absolute right-[-1.4rem] md:right-[-3.6rem] top-[-2.3rem] xl:top-[-4rem] tracking-tightest
-          bg-gradient-to-bl  from-custom-dark-light/40 dark:from-custom-white-dark/40  to-custom-dark-light/5 
-        dark:to-custom-white-dark/5 to-70% bg-clip-text text-transparent pr-6 hidden xl:block"
-        >
-          {props.data.order.toString().padStart(2, "0")}
+    <div className="xl:w-[60vw] lg:w-[80vw] md:[60vw] max-w-[1200px]">
+      <div className=" border border-black/[0.2] dark:border-white/[0.2] relative group ">
+        <div className="dark:text-custom-orange-dark text-custom-dark">
+          <GoPlus className="absolute h-6 w-6 -top-3 -left-3 " />
+          <GoPlus className="absolute h-6 w-6 -bottom-3 -left-3 " />
+          <GoPlus className="absolute h-6 w-6 -top-3 -right-3 " />
+          <GoPlus className="absolute h-6 w-6 -bottom-3 -right-3 " />
         </div>
-        <div className=" grid grid-cols-4 gap-4 xl:gap-0 justify-items-center items-center z-10 ">
-          {/**Image */}
-          <div
-            className={` w-full xl:w-72 h-72 md:h-96 rounded-t-2xl rounded-b-none xl:rounded-2xl col-span-4 xl:col-span-2`}
-          >
-            <ProjectImage
-              logo={props.data.logo}
-              thumbnail={props.data.thumbnail}
-              contrastColor={props.data.contrastColor}
-            />
-          </div>
-          {/**Content */}
-          <div className="col-span-4 xl:col-span-2 px-4  pb-6 pt-2 xl:pr-16 w-full">
+
+        <div className="flex flex-col lg:flex-row items-center justify-center p-4 md:p-8 gap-4 md:gap-16">
+          <Image
+            src={props.data.thumbnail}
+            width={400}
+            height={200}
+            alt={"Thumbnail"}
+            className={` object-cover aspect-video w-full xl:w-[400px] lg:w-[360px] md:max-w-[80vw] lg:aspect-square object-right-top   rounded-2xl transition-opacity ease-linear duration-300 `}
+          />
+          <div className="">
             {/**Title */}
             <h1
               className={
                 props.data.gradientColorDark && props.data.gradientColorLight
-                  ? `font-bold text-2xl md:text-3xl xl:text-5xl group-hover:bg-clip-text group-hover:text-transparent ease-in-out
+                  ? `font-bold text-xl md:text-2xl xl:text-4xl group-hover:bg-clip-text group-hover:text-transparent ease-in-out
               dark:group-hover:${props.data.gradientColorDark} group-hover:${props.data.gradientColorLight} group-hover:bg-[length:200%_auto] group-hover:animate-gradient pb-2`
                   : `font-bold text-2xl md:text-3xl xl:text-5xl`
               }

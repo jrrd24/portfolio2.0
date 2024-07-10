@@ -8,6 +8,8 @@ import About from "./sections/About";
 import Contact from "./sections/Contact";
 import Footer from "./components/Footer";
 import WhoAmI from "./sections/WhoAmI";
+import ProjectsRework from "./sections/ProjectsRework";
+import AboutRework from "./sections/AboutRework";
 
 export const metadata: Metadata = {
   title: "Jerard Pagalilauan",
@@ -29,8 +31,10 @@ export default function Home() {
           >
             <Hero />
             <WhoAmI />
-            <Projects />
-            <About />
+            <ProjectsRework />
+            {/* <Projects /> */}
+            <AboutRework />
+            {/* <About /> */}
             <Contact />
             <Footer />
           </div>
