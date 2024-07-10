@@ -57,7 +57,7 @@ const Contact = (props: Props) => {
                 className="mt-2 font-bold text-5xl md:text-6xl  lg:text-7xl w-fit h-full-pb bg-clip-text
               text-transparent bg-gradient-flow bg-[length:200%_auto] animate-gradient "
               >
-                Interested?
+                <span>Interested?</span>
               </div>
 
               <h3 className="text-xl md:text-2xl  lg:text-xl font-bold ">

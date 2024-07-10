@@ -10,7 +10,7 @@ const Footer = (props: Props) => {
       <div className="flex flex-col md:flex-row items-center justify-between my-8 md:px-24 md:my-0  min-h-14">
         <div className=" text-xs lg:text-sm">
           <span className="text-transparent bg-gradient-flow bg-[length:200%_auto] animate-gradient bg-clip-text font-bold text-base">
-            Jerard Pagalilauan’s
+            <span>Jerard Pagalilauan’s</span>
           </span>{" "}
           Web Portfolio v2.0
         </div>
