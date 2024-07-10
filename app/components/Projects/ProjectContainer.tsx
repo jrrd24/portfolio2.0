@@ -53,7 +53,8 @@ const ProjectContainer = (props: Props) => {
             width={400}
             height={200}
             alt={"Thumbnail"}
-            className={` object-cover aspect-video w-full xl:w-[400px] lg:w-[360px] md:max-w-[80vw] lg:aspect-square object-right-top   rounded-2xl transition-opacity ease-linear duration-300 `}
+            className={` object-cover aspect-video w-full xl:w-[400px] lg:w-[360px] md:max-w-[80vw] lg:aspect-square object-right-top   
+              rounded-2xl transition-opacity ease-linear duration-300 pointer-events-none `}
           />
           <div className="">
             {/**Title */}
