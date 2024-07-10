@@ -22,25 +22,27 @@ type Tag = {
 const AchievementContainer = (props: Props) => {
   return (
     <div
-      className="group max-w-[24rem] xl:w-[56rem] rounded-3xl flex flex-col gap-6 p-6
-bg-slate-100/70 shadow-2xl shadow-slate-500/30 dark:shadow-slate-700/30 dark:bg-slate-800/70  relative"
+      className="group w-full max-w-[22rem] xl:max-w-[48rem] rounded-3xl flex flex-col gap-4 md:gap-6 p-6
+bg-slate-100/50 shadow-2xl shadow-slate-500/30 dark:shadow-slate-700/30 dark:bg-slate-800/50  relative"
     >
       {/**Image */}
       <div
-        className={` w-full h-56 rounded-t-2xl xl:rounded-xl  overflow-hidden`}
+        className={` w-full h-44 rounded-2xl xl:rounded-xl  overflow-hidden`}
       >
         <Image
           src={props.data.image}
           width={500}
           height={500}
           alt="achievement"
-          className=" group-hover:scale-110 transition duration-500  w-full h-56 rounded-2xl xl:rounded-xl object-cover"
+          className=" group-hover:scale-110 transition duration-500  w-full h-44 rounded-2xl xl:rounded-xl object-cover"
         />
       </div>
 
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col gap-1">
         {/**Title */}
-        <h1 className="text-xl font-bold ">{props.data.title}</h1>
+        <h1 className="text-md md:text-lg font-bold leading-snug md:leading-snug">
+          {props.data.title}
+        </h1>
         <p className=" text-sm md:text-base text-custom-dark-light/60 dark:text-custom-white-dark/60">
           {props.data.date}
         </p>

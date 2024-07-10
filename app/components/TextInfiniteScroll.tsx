@@ -21,7 +21,7 @@ const TextInfiniteScroll = (props: Props) => {
           {Array.from({ length: 4 }).map((_, index) => (
             <li
               key={index}
-              className="w-fit max-w-none whitespace-nowrap  text-4xl md:text-5xl lg:text-7xl font-bold py-6 flex items-center"
+              className="w-fit max-w-none whitespace-nowrap  text-5xl md:text-6xl lg:text-7xl font-bold py-6 flex items-center"
             >
               {props.text} &nbsp;{" "}
               <span

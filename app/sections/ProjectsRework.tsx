@@ -47,7 +47,7 @@ const ProjectsRework = (props: Props) => {
             background="#1B1B1F"
             onClick={() => setShowMore(!showMore)}
           >
-            <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
+            <span className="whitespace-pre-wrap text-center text-sm font-bold leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 md:text-md lg:text-lg">
               {showMore ? "➖ Show Less" : "🚀 Show All Projects"}
             </span>
           </ShimmerButton>

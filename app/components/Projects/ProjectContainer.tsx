@@ -38,7 +38,7 @@ type Responsibilities = {
 
 const ProjectContainer = (props: Props) => {
   return (
-    <div className="md:w-[60vw] max-w-[1200px]">
+    <div className="xl:w-[60vw] lg:w-[80vw] md:[60vw] max-w-[1200px]">
       <div className=" border border-black/[0.2] dark:border-white/[0.2] relative select-none group ">
         <div className="dark:text-custom-orange-dark text-custom-dark">
           <GoPlus className="absolute h-6 w-6 -top-3 -left-3 " />
@@ -53,7 +53,7 @@ const ProjectContainer = (props: Props) => {
             width={400}
             height={200}
             alt={"Thumbnail"}
-            className={` object-cover aspect-video md:aspect-square object-right-top   rounded-2xl transition-opacity ease-linear duration-300 `}
+            className={` object-cover aspect-video w-full xl:w-[400px] lg:w-[360px] md:max-w-[80vw] lg:aspect-square object-right-top   rounded-2xl transition-opacity ease-linear duration-300 `}
           />
           <div className="">
             {/**Title */}

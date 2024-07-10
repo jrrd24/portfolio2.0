@@ -125,7 +125,7 @@ const ProjectsData = [
       { id: 3, name: "ExpressJs", Icon: SiExpress, order: 3 },
       { id: 4, name: "MySQL", Icon: GrMysql, order: 4 },
       { id: 5, name: "Material UI", Icon: SiMui, order: 5 },
-      { id: 5, name: "Figma", Icon: FaFigma, order: 5 },
+      { id: 6, name: "Figma", Icon: FaFigma, order: 6 },
     ],
     responsibilities: [
       { id: 1, name: "👷‍♂️ Full-Stack Developer", order: 1 },
@@ -166,7 +166,8 @@ const ProjectsData = [
     id: 6,
     title: "Portfolio 2.0",
     employerDescription: undefined,
-    description: "My personal web portfolio.",
+    description:
+      "My personal web portfolio. Built using NextJS 14 and Tailwind. Deployed using Vercel",
     logo: "/assets/projects/logo/portfolio2_logo.png",
     thumbnail: "/assets/projects/thumbnail/portfolio2_thumbnail.png",
     link: "https://www.jerardpagalilauan.com/",
@@ -180,6 +181,7 @@ const ProjectsData = [
       { id: 3, name: "Vercel", Icon: IoLogoVercel, order: 4 },
       { id: 4, name: "Figma", Icon: FaFigma, order: 5 },
       { id: 5, name: "TypeScript", Icon: BiLogoTypescript, order: 3 },
+      { id: 6, name: "shadcn/ui", Icon: SiShadcnui, order: 6 },
     ],
     responsibilities: [
       { id: 1, name: "👷‍♂️ Front-End Developer", order: 1 },
