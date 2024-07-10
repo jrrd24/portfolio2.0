@@ -1,11 +1,12 @@
 import React from "react";
 import TextInfiniteScroll from "../components/TextInfiniteScroll";
 import AboutSectionTitle from "../components/AboutSectionTitle";
-import AboutExperiences from "./components/AboutExperiences";
 import AchievementContainer from "../components/AchievementContainer";
 import AchivementData from "../data/AchievementData";
 import TechStackData from "../data/TechStackData";
 import TechStackContainer from "../components/TechStackContainer";
+import ExperienceData from "../data/ExperienceData";
+import ExperienceContainer from "../components/About/ExperienceContainer";
 
 type Props = {};
 
@@ -25,7 +26,7 @@ const AboutRework = (props: Props) => {
       {/**Title */}
       <div
         id="about"
-        className="mt-32 md:mt-48 flex items-center w-full flex-col z-20"
+        className="mt-32 md:mt-48 lg:mt-72 flex items-center w-full flex-col z-20"
       >
         <TextInfiniteScroll
           text="About Me"
@@ -34,21 +35,14 @@ const AboutRework = (props: Props) => {
         />
       </div>
 
-      {/**Sub-title*/}
-      {/* <div className=" w-full pr-8 text-right text-md md:text-xl  text-custom-dark-light/60 dark:text-custom-white-dark/60 z-20">
-        Get to know
-        <br />
-        Me Better
-        <br />
-        <span className=" text-custom-red dark:text-custom-red-dark">✗✗✗</span>
-      </div> */}
-
-      <div className="px-8  mt-16 md:mt-32 w-full col-start-1 lg:col-start-2 col-end-13">
+      <div className="px-8  mt-16 md:mt-32 w-full">
         <div className="flex flex-col md:gap-24 items-center md:px-4 lg:px-12 z-20 relative">
           {/**Professional Experience */}
-          <div className="flex flex-col items-center gap-8 md:gap-8">
+          <div className="flex flex-col items-center">
             <AboutSectionTitle title="My Professional Experience" />
-            <AboutExperiences />
+            {ExperienceData?.sort((a, b) => a.order - b.order).map((data) => (
+              <ExperienceContainer key={data.id} data={data} />
+            ))}
           </div>
 
           {/**Achievements */}
@@ -99,7 +93,7 @@ const TechStackLabel = (props: LabelProps) => {
   return (
     <div
       className="bg-slate-100/50 shadow-2xl shadow-slate-500/30 dark:shadow-slate-700/30 dark:bg-slate-800/50 relative flex items-center justify-center 
-      rounded-xl h-12 font-bold  col-span-3 md:col-span-5 xl:col-span-7 backdrop-blur-sm"
+      rounded-xl h-12 font-bold  col-span-3 md:col-span-5 xl:col-span-7 backdrop-blur-sm select-none"
     >
       {props.label}
     </div>

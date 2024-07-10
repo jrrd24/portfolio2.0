@@ -1,10 +1,12 @@
 const ExperienceData = [
   {
     id: 1,
+    logo: "/assets/experience/logo/scaleup_logo.png",
+    color: "#231F20",
     company: "ScaleUp Solutions",
     job: "Front-End Web Developer (Intern)",
     duration: "Jan 2024 - Apr 2024",
-    order: 1,
+    order: 2,
     responsibilities: [
       {
         id: 1,
@@ -27,10 +29,12 @@ const ExperienceData = [
 
   {
     id: 2,
+    logo: "/assets/experience/logo/portfolio2_logo.png",
+    color: "#4E5977",
     company: "Freelance",
     job: "Full Stack Desktop App Developer",
     duration: "Dec 2023 - Present",
-    order: 2,
+    order: 1,
     responsibilities: [
       {
         id: 1,

@@ -39,7 +39,7 @@ type Responsibilities = {
 const ProjectContainer = (props: Props) => {
   return (
     <div className="xl:w-[60vw] lg:w-[80vw] md:[60vw] max-w-[1200px]">
-      <div className=" border border-black/[0.2] dark:border-white/[0.2] relative select-none group ">
+      <div className=" border border-black/[0.2] dark:border-white/[0.2] relative group ">
         <div className="dark:text-custom-orange-dark text-custom-dark">
           <GoPlus className="absolute h-6 w-6 -top-3 -left-3 " />
           <GoPlus className="absolute h-6 w-6 -bottom-3 -left-3 " />
