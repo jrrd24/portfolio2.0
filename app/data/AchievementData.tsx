@@ -3,7 +3,7 @@ const AchivementData = [
     id: 1,
     title: "Power Up! Software Championing Filipino Workers Hackathon",
     date: "April 2024",
-    order: 1,
+    order: 2,
     image: "/assets/achievements/Hackathon.jpg",
     tags: [
       {
@@ -23,7 +23,7 @@ const AchivementData = [
     id: 2,
     title: "Computer System Servicing NC II",
     date: "December 2023",
-    order: 2,
+    order: 3,
     image: "/assets/achievements/NC2.png",
     tags: [
       {
@@ -38,7 +38,7 @@ const AchivementData = [
     id: 3,
     title: "International Conference on Information Technology Education ",
     date: "November 2023",
-    order: 3,
+    order: 4,
     image: "/assets/achievements/ICITE.png",
     tags: [
       {
@@ -58,7 +58,7 @@ const AchivementData = [
     id: 4,
     title: "GDSC Info Session - UI/UX Design Using Figma",
     date: "October 2023",
-    order: 4,
+    order: 5,
     image: "/assets/achievements/GDSC_Speaker.png",
     tags: [
       {
@@ -73,7 +73,7 @@ const AchivementData = [
     id: 5,
     title: "IDEATECH 2023",
     date: "November 2023",
-    order: 5,
+    order: 6,
     image: "/assets/achievements/IDEATECH.png",
     tags: [
       {
@@ -93,7 +93,7 @@ const AchivementData = [
     id: 6,
     title: "Philippine Civil Service Examination - Professional Level",
     date: "August 2023",
-    order: 6,
+    order: 7,
     image: "/assets/achievements/CSE.png",
     tags: [
       {
@@ -108,7 +108,7 @@ const AchivementData = [
     id: 7,
     title: "DICT Philippines Startup 7 - Pitching Competition",
     date: "October 2022",
-    order: 7,
+    order: 8,
     image: "/assets/achievements/DICT_Pitch.png",
     tags: [
       {
@@ -123,7 +123,7 @@ const AchivementData = [
     id: 8,
     title: "Google Developer Students Club - USLT",
     date: "2020 - 2024",
-    order: 8,
+    order: 9,
     image: "/assets/achievements/GDSC_Officer.png",
     tags: [
       {
@@ -138,13 +138,33 @@ const AchivementData = [
     id: 9,
     title: "President's Lister",
     date: "2022 - 2023",
-    order: 9,
+    order: 10,
     image: "/assets/achievements/PL.png",
     tags: [
       {
         id: 1,
         description: "🏆 Awardee",
         order: 1,
+      },
+    ],
+  },
+
+  {
+    id: 10,
+    title: "Bachelor Of Science In Information Technology",
+    date: "June 2024",
+    order: 1,
+    image: "/assets/achievements/Grad.jpg",
+    tags: [
+      {
+        id: 1,
+        description: "🎓 Graduate",
+        order: 1,
+      },
+      {
+        id: 2,
+        description: "🏅 Academic Distinction",
+        order: 2,
       },
     ],
   },
