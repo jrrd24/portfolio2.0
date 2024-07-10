@@ -52,7 +52,7 @@ const WhoAmI = (props: Props) => {
             className="mt-2 font-bold text-5xl md:text-6xl  lg:text-7xl w-fit h-full-pb bg-clip-text
                 text-transparent bg-gradient-flow bg-[length:200%_auto] animate-gradient "
           >
-            Jerard Pagalilauan
+            <span>Jerard Pagalilauan</span>
           </div>
 
           <p className="mt-4 text-base md:text-xl  lg:text-xl max-w-[48rem] dark:text-custom-white-dark/80 text-custom-dark-light/80">

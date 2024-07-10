@@ -82,8 +82,8 @@ function Hero({}: Props) {
             className="font-bold text-5xl sm:text-7xl mb-6  lg:text-9xl h-full-pb  text-right w-fit bg-clip-text
             text-transparent bg-gradient-flow bg-[length:200%_auto] animate-gradient"
           >
-            Jerard <br />
-            Pagalilauan
+            <span>Jerard</span> <br />
+            <span>Pagalilauan</span>
           </div>
         </div>
       </div>
