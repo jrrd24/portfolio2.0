@@ -24,6 +24,7 @@ import {
   SiPrisma,
   SiShadcnui,
   SiSwiper,
+  SiAxios,
 } from "react-icons/si";
 import { TbFileTypeXml, TbLetterK } from "react-icons/tb";
 const ProjectsData = [
@@ -32,7 +33,6 @@ const ProjectsData = [
     title: "ScaleUp Solutions",
     employerDescription: "A project with ScaleUp Solutions Inc.",
     description: "The company website of ScaleUp Solutions.",
-    logo: "/assets/projects/logo/scaleup_logo.png",
     thumbnail: "/assets/projects/thumbnail/scaleup_thumbnail.png",
     link: "https://www.scaleupsolutions.ph/",
     order: 2,
@@ -49,8 +49,21 @@ const ProjectsData = [
       { id: 7, name: "Swiper Js", Icon: SiSwiper, order: 7 },
     ],
     responsibilities: [
-      { id: 1, name: "🎨 Web Designer", order: 1 },
-      { id: 2, name: "👷‍♂️ Front-End Developer", order: 2 },
+      {
+        id: 1,
+        name: "🎨 Helped Redesign the Website's UI/UX - Figma",
+        order: 1,
+      },
+      {
+        id: 2,
+        name: "👷‍♂️ Front-End Developer - ASP.net",
+        order: 2,
+      },
+      {
+        id: 3,
+        name: "🐛 System Testing and Debugging",
+        order: 3,
+      },
     ],
   },
   {
@@ -58,7 +71,6 @@ const ProjectsData = [
     title: "Print To Scale",
     employerDescription: "A project with ScaleUp Solutions Inc.",
     description: "The company website of Print To Scale. ",
-    logo: "/assets/projects/logo/printToScale_logo.png",
     thumbnail: "/assets/projects/thumbnail/printToScale_thumbnail.png",
     link: "https://www.printtoscale.ph/",
     order: 5,
@@ -75,8 +87,21 @@ const ProjectsData = [
       { id: 7, name: "Swiper Js", Icon: SiSwiper, order: 7 },
     ],
     responsibilities: [
-      { id: 1, name: "🎨 Web Designer", order: 1 },
-      { id: 2, name: "👷‍♂️ Front-End Developer", order: 2 },
+      {
+        id: 1,
+        name: "🎨 Helped Design the Website - Figma",
+        order: 1,
+      },
+      {
+        id: 2,
+        name: "👷‍♂️ Front-End Developer - ASP.net",
+        order: 2,
+      },
+      {
+        id: 3,
+        name: "🐛 System Testing and Debugging",
+        order: 3,
+      },
     ],
   },
   {
@@ -85,7 +110,6 @@ const ProjectsData = [
     employerDescription: undefined,
     description:
       "KAYA is your one-stop app for teachers and universities to connect with talent and empower professional growth!",
-    logo: "/assets/projects/logo/kaya_logo.png",
     thumbnail: "/assets/projects/thumbnail/kaya_thumbnail.png",
     link: undefined,
     order: 1,
@@ -102,8 +126,9 @@ const ProjectsData = [
       { id: 7, name: "shadcn/ui", Icon: SiShadcnui, order: 7 },
     ],
     responsibilities: [
-      { id: 1, name: "👷‍♂️ Full-Stack Developer", order: 1 },
-      { id: 2, name: "⚙️ Database Designer", order: 2 },
+      { id: 1, name: "👷‍♂️ Full-Stack Developer - NextJs", order: 1 },
+      { id: 2, name: "⚙️ Database Designer - Prisma", order: 2 },
+      { id: 3, name: "✨ Integration using NextJs API Routes", order: 3 },
     ],
   },
   {
@@ -112,7 +137,6 @@ const ProjectsData = [
     employerDescription: undefined,
     description:
       "Lokal 360 is a web app designed to empower local businesses by connecting consumers with nearby businesses, fostering a sense of community and encouraging local commerce.",
-    logo: "/assets/projects/logo/lokal360_logo.png",
     thumbnail: "/assets/projects/thumbnail/lokal360_thumbnail.png",
     link: undefined,
     order: 3,
@@ -126,11 +150,17 @@ const ProjectsData = [
       { id: 4, name: "MySQL", Icon: GrMysql, order: 4 },
       { id: 5, name: "Material UI", Icon: SiMui, order: 5 },
       { id: 6, name: "Figma", Icon: FaFigma, order: 6 },
+      { id: 7, name: "Axios", Icon: SiAxios, order: 7 },
     ],
     responsibilities: [
-      { id: 1, name: "👷‍♂️ Full-Stack Developer", order: 1 },
-      { id: 2, name: "⚙️ Database Designer", order: 2 },
-      { id: 3, name: "🎨 Web Designer", order: 3 },
+      {
+        id: 1,
+        name: "👷‍♂️ Full-Stack Developer - ReactJs, NodeJs, ExpressJs",
+        order: 1,
+      },
+      { id: 2, name: "⚙️ Database Designer - MySQL", order: 2 },
+      { id: 3, name: "🎨 Web Designer - Figma", order: 3 },
+      { id: 3, name: "✨ Integration using REST APIs", order: 3 },
       { id: 4, name: "⭐ Project Lead", order: 4 },
     ],
   },
@@ -141,7 +171,6 @@ const ProjectsData = [
       "A Freelance Project for the Metro Tuguegarao Multi-Purpose Cooperative.",
     description:
       "A management system for the day-to-day tasks of the cooperative.",
-    logo: "/assets/projects/logo/coop_logo.png",
     thumbnail: "/assets/projects/thumbnail/coop_thumbnail.png",
     link: undefined,
     order: 4,
@@ -155,9 +184,9 @@ const ProjectsData = [
       { id: 4, name: "OpenXML", Icon: TbFileTypeXml, order: 4 },
     ],
     responsibilities: [
-      { id: 1, name: "👷‍♂️ Full-Stack Developer", order: 1 },
-      { id: 2, name: "⚙️ Database Designer", order: 2 },
-      { id: 3, name: "📑 Handled Excel Report Generation", order: 3 },
+      { id: 1, name: "👷‍♂️ Full-Stack Developer - .NET Framework", order: 1 },
+      { id: 2, name: "⚙️ Database Designer - MySQL", order: 2 },
+      { id: 3, name: "📑 Handled Report Generation", order: 3 },
       { id: 4, name: "💬 Client Presentations", order: 4 },
       { id: 5, name: "⚒️ System Deployment", order: 5 },
     ],
@@ -168,10 +197,9 @@ const ProjectsData = [
     employerDescription: undefined,
     description:
       "My personal web portfolio. Built using NextJS 14 and Tailwind. Deployed using Vercel",
-    logo: "/assets/projects/logo/portfolio2_logo.png",
     thumbnail: "/assets/projects/thumbnail/portfolio2_thumbnail.png",
     link: "https://www.jerardpagalilauan.com/",
-    order: 6,
+    order: 7,
     contrastColor: "#7D6188",
     gradientColorDark: "bg-gradient-portfolio2-dark",
     gradientColorLight: "bg-gradient-portfolio2-light",
@@ -184,9 +212,47 @@ const ProjectsData = [
       { id: 6, name: "shadcn/ui", Icon: SiShadcnui, order: 6 },
     ],
     responsibilities: [
-      { id: 1, name: "👷‍♂️ Front-End Developer", order: 1 },
-      { id: 2, name: "🚀 Website Deployment", order: 2 },
-      { id: 3, name: "🎨 Web Designer", order: 3 },
+      { id: 1, name: "👷‍♂️ Front-End Developer - NextJs", order: 1 },
+      { id: 2, name: "🚀 Website Deployment via Vercel", order: 2 },
+      { id: 3, name: "🎨 Web Designer - Figma", order: 3 },
+    ],
+  },
+  {
+    id: 7,
+    title: "Osaka Filters",
+    employerDescription: "A project with ScaleUp Solutions Inc.",
+    description: "The company website of Osaka Filters. ",
+    thumbnail: "/assets/projects/thumbnail/osaka_thumbnail.png",
+    link: "https://www.osakafilter.com/",
+    order: 6,
+    contrastColor: "#F6F6F6",
+    gradientColorDark: "bg-gradient-osaka-dark",
+    gradientColorLight: "bg-gradient-osaka-light",
+    tags: [
+      { id: 1, name: "ASP.net", Icon: DiDotnet, order: 1 },
+      { id: 2, name: "HTML", Icon: FaHtml5, order: 2 },
+      { id: 3, name: "JavaScript", Icon: IoLogoJavascript, order: 3 },
+      { id: 4, name: "CSS", Icon: FaCss3Alt, order: 4 },
+      { id: 5, name: "Bootstrap 4.6", Icon: FaBootstrap, order: 5 },
+      { id: 6, name: "Figma", Icon: FaFigma, order: 6 },
+      { id: 7, name: "Swiper Js", Icon: SiSwiper, order: 7 },
+    ],
+    responsibilities: [
+      {
+        id: 1,
+        name: "🎨 Helped Design the Website - Figma",
+        order: 1,
+      },
+      {
+        id: 2,
+        name: "👷‍♂️ Front-End Developer - ASP.net",
+        order: 2,
+      },
+      {
+        id: 3,
+        name: "🐛 System Testing and Debugging",
+        order: 3,
+      },
     ],
   },
 ];
