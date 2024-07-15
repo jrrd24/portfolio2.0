@@ -1,10 +1,8 @@
 import { Metadata } from "next";
 import Hero from "./sections/Hero";
-import Projects from "./sections/Projects";
 import { ThemeProvider } from "next-themes";
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
-import About from "./sections/About";
 import Contact from "./sections/Contact";
 import Footer from "./components/Footer";
 import WhoAmI from "./sections/WhoAmI";
