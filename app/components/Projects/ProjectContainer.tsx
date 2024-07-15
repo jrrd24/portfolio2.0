@@ -10,7 +10,6 @@ type Props = {
 
 type Data = {
   order: number;
-  logo: string;
   thumbnail: string;
   title: string;
   link?: string;

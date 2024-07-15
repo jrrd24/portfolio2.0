@@ -44,23 +44,24 @@ const WhoAmI = (props: Props) => {
       {/**Content */}
       <div className="flex justify-center items-center min-h-dvh my-48 lg:mb-0 px-[32px]">
         <div className="text-left flex flex-col justify-center align-middle h-dvh xl:max-h-[1280px]">
-          <h3 className="text-xl md:text-2xl  lg:text-3xl font-medium">
+          <h3 className="text-lg md:text-xl  lg:text-2xl font-medium">
             Hi. I&apos;m
           </h3>
 
           <div
-            className="mt-2 font-bold text-5xl md:text-6xl  lg:text-7xl w-fit h-full-pb bg-clip-text
+            className="mt-2 font-bold text-4xl md:text-6xl  lg:text-7xl w-fit h-full-pb bg-clip-text
                 text-transparent bg-gradient-flow bg-[length:200%_auto] animate-gradient "
           >
             <span>Jerard Pagalilauan</span>
           </div>
 
-          <p className="mt-4 text-base md:text-xl  lg:text-xl max-w-[48rem] dark:text-custom-white-dark/80 text-custom-dark-light/80">
-            A curious and hardworking{" "}
-            <b>Bachelor of Science in Information Technology</b> graduate with
-            experience in developing web and desktop apps, who’s dedicated in
-            bringing creative and functional web designs to life through
-            programming.
+          <p className="mt-4 text-sm lg:text-lg max-w-[48rem] dark:text-custom-white-dark/80 text-custom-dark-light/80">
+            A highly innovative and motivated graduate of{" "}
+            <b>Bachelor of Science in Information Technology</b> with rich
+            experience in working with clients and collaborators in developing
+            web and desktop systems. Currently seeking to join the IT industry
+            as a web developer to improve his skills, learn new technologies,
+            and become a productive member of a company.
           </p>
 
           {/* <div className="mt-12 bg-gradient-flow bg-[length:200%_auto] animate-gradient w-1/2 sm:w-1/4 h-6 md:h-8 rounded-xl"></div> */}

@@ -11,18 +11,14 @@ const ExperienceData = [
       {
         id: 1,
         content:
-          "Handled the frontend development of websites using HTML, CSS, bootstrap and JavaScript.",
+          "Redesigned the company website and created detailed prototypes, significantly enhancing the overall user experience and expediting the development process.",
         order: 1,
       },
       {
         id: 2,
-        content: "Created website prototypes using Figma",
+        content:
+          "Collaborated with designers and project managers to develop user-friendly ASP.NET websites, successfully meeting the timeline and customer's needs.",
         order: 2,
-      },
-      {
-        id: 3,
-        content: "Enhanced and maintained the company’s and clients’ websites.",
-        order: 3,
       },
     ],
   },
@@ -39,18 +35,19 @@ const ExperienceData = [
       {
         id: 1,
         content:
-          "Helped test and develop desktop applications, using C# with MySql database, for managing the finances of client cooperatives.",
+          "Co-designed and developed a task management desktop application for a client cooperative, streamlining their workflow and boosting efficiency.",
         order: 1,
       },
       {
         id: 2,
-        content: "Utilized .Net framework for both front and backend.",
+        content:
+          "Utilized an in-house .NET backend framework to streamline the development process and improve code maintainability.",
         order: 2,
       },
       {
         id: 3,
         content:
-          "Programmatically generated Excel reports and Microsoft Word certificates.",
+          "Developed automated Excel and Word report generation feature using OpenXML, making data presentations and certificate generation processes much more efficent.",
         order: 3,
       },
     ],
