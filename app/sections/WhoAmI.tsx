@@ -1,20 +1,11 @@
-"use client";
-
-import { useEffect, useState } from "react";
-import { useTheme } from "next-themes";
-import Particles from "@/components/magicui/particles";
 import React from "react";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import ShimmerButton from "@/components/magicui/shimmer-button";
 
 type Props = {};
 
 const WhoAmI = (props: Props) => {
-  const { theme } = useTheme();
-  const [color, setColor] = useState("#ffffff");
-
-  useEffect(() => {
-    setColor(theme === "dark" ? "#ffffff" : "#000000");
-  }, [theme]);
-
   return (
     <section className="min-h-dvh container relative">
       {/* Top Circle - Red*/}
@@ -50,12 +41,12 @@ const WhoAmI = (props: Props) => {
 
           <div
             className="mt-2 font-bold text-4xl md:text-6xl  lg:text-7xl w-fit h-full-pb bg-clip-text
-                text-transparent bg-gradient-flow bg-[length:200%_auto] animate-gradient "
+                text-transparent bg-gradient-flow bg-[length:200%_auto] animate-gradient z-30"
           >
             <span>Jerard Pagalilauan</span>
           </div>
 
-          <p className="mt-4 text-sm lg:text-lg max-w-[48rem] dark:text-custom-white-dark/80 text-custom-dark-light/80">
+          <p className="mt-4 text-base lg:text-lg max-w-[48rem] dark:text-custom-white-dark/80 text-custom-dark-light/80 z-30">
             A highly innovative and motivated graduate of{" "}
             <b>Bachelor of Science in Information Technology</b> with rich
             experience in working with clients and collaborators in developing
@@ -64,17 +55,24 @@ const WhoAmI = (props: Props) => {
             and become a productive member of a company.
           </p>
 
-          {/* <div className="mt-12 bg-gradient-flow bg-[length:200%_auto] animate-gradient w-1/2 sm:w-1/4 h-6 md:h-8 rounded-xl"></div> */}
+          <Link
+            href="/Pagalilauan_Jerard_Resume.pdf"
+            target="_blank"
+            className="mt-12 "
+          >
+            <ShimmerButton
+              className="shadow-2xl"
+              shimmerColor="#F3A07D"
+              shimmerSize="0.2em"
+              background="#1B1B1F"
+            >
+              <span className="whitespace-pre-wrap text-center text-sm font-bold leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-base">
+                📄 View Resume
+              </span>
+            </ShimmerButton>
+          </Link>
         </div>
       </div>
-
-      <Particles
-        className="absolute inset-0"
-        quantity={100}
-        ease={80}
-        color={color}
-        refresh
-      />
     </section>
   );
 };
