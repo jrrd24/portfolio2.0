@@ -25,6 +25,7 @@ import {
   SiShadcnui,
   SiSwiper,
   SiAxios,
+  SiJsonwebtokens,
 } from "react-icons/si";
 import { TbFileTypeXml, TbLetterK } from "react-icons/tb";
 const ProjectsData = [
@@ -129,6 +130,7 @@ const ProjectsData = [
       { id: 1, name: "👷‍♂️ Full-Stack Developer - NextJs", order: 1 },
       { id: 2, name: "⚙️ Database Designer - Prisma", order: 2 },
       { id: 3, name: "✨ Integration using NextJs API Routes", order: 3 },
+      { id: 4, name: "🔐 Authentication thru Kinde", order: 4 },
     ],
   },
   {
@@ -151,6 +153,7 @@ const ProjectsData = [
       { id: 5, name: "Material UI", Icon: SiMui, order: 5 },
       { id: 6, name: "Figma", Icon: FaFigma, order: 6 },
       { id: 7, name: "Axios", Icon: SiAxios, order: 7 },
+      { id: 8, name: "JSON Web Tokens", Icon: SiJsonwebtokens, order: 8 },
     ],
     responsibilities: [
       {
@@ -160,8 +163,9 @@ const ProjectsData = [
       },
       { id: 2, name: "⚙️ Database Designer - MySQL", order: 2 },
       { id: 3, name: "🎨 Web Designer - Figma", order: 3 },
-      { id: 3, name: "✨ Integration using REST APIs", order: 3 },
-      { id: 4, name: "⭐ Project Lead", order: 4 },
+      { id: 4, name: "✨ Integration using REST APIs", order: 4 },
+      { id: 5, name: "🔐 Authentication with JSON Web Tokens", order: 5 },
+      { id: 6, name: "⭐ Project Lead", order: 6 },
     ],
   },
   {
