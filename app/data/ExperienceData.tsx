@@ -4,7 +4,7 @@ const ExperienceData = [
     logo: "/assets/experience/logo/scaleup_logo.png",
     color: "#231F20",
     company: "ScaleUp Solutions",
-    job: "Front-End Web Developer (Intern)",
+    job: "Web Developer and Designer Intern",
     duration: "Jan 2024 - Apr 2024",
     order: 2,
     responsibilities: [
