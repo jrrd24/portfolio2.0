@@ -56,7 +56,7 @@ const WhoAmI = (props: Props) => {
           </p>
 
           <Link
-            href="/Pagalilauan_Jerard_Resume.pdf"
+            href="/files/Pagalilauan_Jerard_Resume.pdf"
             target="_blank"
             className="mt-12 "
           >
