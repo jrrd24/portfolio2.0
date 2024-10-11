@@ -28,7 +28,9 @@ const config: Config = {
     'group-hover:bg-gradient-portfolio2-light',
     'dark:group-hover:bg-gradient-portfolio2-dark',
     'group-hover:bg-gradient-osaka-light',
-    'dark:group-hover:bg-gradient-osaka-dark'
+    'dark:group-hover:bg-gradient-osaka-dark',
+    'group-hover:bg-gradient-charik-light',
+    'dark:group-hover:bg-gradient-charik-dark'
   ],
   
   prefix: "",
@@ -57,7 +59,9 @@ const config: Config = {
         'gradient-portfolio2-dark': 'linear-gradient(to right, #F8F8FF, #F8F8FF, #F3A07D, #F3A07D, #F8F8FF, #F8F8FF)',
         'gradient-portfolio2-light': 'linear-gradient(to right, #1B1B1F, #1B1B1F, #F3A07D, #F3A07D, #1B1B1F, #1B1B1F)',        
         'gradient-osaka-dark': 'linear-gradient(to right, #F8F8FF, #F8F8FF, #056839, #056839, #F8F8FF, #F8F8FF)',
-        'gradient-osaka-light': 'linear-gradient(to right, #1B1B1F, #1B1B1F, #056839, #056839, #1B1B1F, #1B1B1F)'
+        'gradient-osaka-light': 'linear-gradient(to right, #1B1B1F, #1B1B1F, #056839, #056839, #1B1B1F, #1B1B1F)',
+        'gradient-charik-dark': 'linear-gradient(to right, #F8F8FF, #F8F8FF, #FF7C57, #FF7C57 , #F8F8FF, #F8F8FF)',
+        'gradient-charik-light': 'linear-gradient(to right, #1B1B1F, #1B1B1F, #FF7C57, #FF7C57, #1B1B1F, #1B1B1F)'
       },
       colors: {
         border: "hsl(var(--border))",

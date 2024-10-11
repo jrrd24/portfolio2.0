@@ -107,26 +107,29 @@ body {
   }
 }
 
-/* width */
-::-webkit-scrollbar {
-  width: 8px;
-}
+@media only screen and (-webkit-min-device-pixel-ratio: 0) and (min-device-width: 1025px) {
 
-/* Track */
-::-webkit-scrollbar-track {
-  background: transparent;
-  border-radius: 5px;
-}
+  /* width */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #7D6188;
-  border-radius: 5px;
-}
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 5px;
+  }
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #9A7CA5;
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #7D6188;
+    border-radius: 5px;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #9A7CA5;
+  }
 }
 
 /* The switch - the box around the slider */

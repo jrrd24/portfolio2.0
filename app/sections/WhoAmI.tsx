@@ -46,7 +46,7 @@ const WhoAmI = (props: Props) => {
             <span>Jerard Pagalilauan</span>
           </div>
 
-          <p className="mt-4 text-base lg:text-lg max-w-[48rem] dark:text-custom-white-dark/80 text-custom-dark-light/80 z-30">
+          <p className="mt-4 text-sm lg:text-lg max-w-[48rem] dark:text-custom-white-dark/80 text-custom-dark-light/80 z-30">
             A highly innovative and motivated graduate of{" "}
             <b>Bachelor of Science in Information Technology</b> with rich
             experience in working with clients and collaborators in developing

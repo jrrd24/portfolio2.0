@@ -15,7 +15,7 @@ const TagLink = (props: Props) => {
       <span className="">
         {props.link ? "🌐" : "🔒"}
         &nbsp;
-        {props.link ? props.link : "Private Repository"}
+        {props.link ? "View Website" : "Private Repository"}
       </span>
     </a>
   );
