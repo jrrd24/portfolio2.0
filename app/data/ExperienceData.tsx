@@ -11,25 +11,31 @@ const ExperienceData = [
       {
         id: 1,
         content:
-          "Redesigned the company website and created detailed prototypes, significantly enhancing the overall user experience and expediting the development process.",
+          "Collaborated with designers and project leaders to deliver high-quality, user-friendly ASP.NET websites on time and met the client's needs.",
         order: 1,
       },
       {
         id: 2,
         content:
-          "Collaborated with designers and project managers to develop user-friendly ASP.NET websites, successfully meeting the timeline and customer's needs.",
+          "Contributed to the company website redesign, focused on improving the layout and navigation, significantly enhancing the overall user experience. ",
         order: 2,
+      },
+      {
+        id: 3,
+        content:
+          "Streamlined development with detailed client-specific prototypes made with Figma. ",
+        order: 3,
       },
     ],
   },
 
   {
     id: 2,
-    logo: "/assets/experience/logo/portfolio2_logo.png",
-    color: "#4E5977",
-    company: "Freelance",
-    job: "Full Stack Desktop App Developer",
-    duration: "Dec 2023 - Present",
+    logo: "/assets/experience/logo/coop_logo.png",
+    color: "#ffffff",
+    company: "Metro Tuguegarao Multi-Purpose Cooperative",
+    job: "Software Developer",
+    duration: "Dec 2023 - Aug 2023",
     order: 1,
     responsibilities: [
       {
