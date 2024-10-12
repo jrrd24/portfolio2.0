@@ -18,7 +18,7 @@ export default function Home() {
     <ThemeProvider attribute="class">
       <main
         className="select-text scroll-smooth relative
-        bg-gradient-to-tr from-slate-300 to-custom-white  dark:from-slate-900 dark:to-zinc-950  
+        bg-gradient-to-tr from-custom-white to-custom-white  dark:from-slate-900 dark:to-zinc-950  
         h-dvh overflow-x-hidden text-custom-dark dark:text-custom-white font-poppins "
       >
         <Navbar />
@@ -30,9 +30,7 @@ export default function Home() {
             <Hero />
             <WhoAmI />
             <ProjectsRework />
-            {/* <Projects /> */}
             <AboutRework />
-            {/* <About /> */}
             <Contact />
             <Footer />
           </div>
