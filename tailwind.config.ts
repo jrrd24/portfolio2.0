@@ -99,7 +99,7 @@ const config: Config = {
         },
         'transparent':'transparent',
         'custom-white':{
-          DEFAULT:'#F8F8FF',
+          DEFAULT:'#F2F3F4',
           dark:'#E3E3E3'
         },
         'custom-dark':{
