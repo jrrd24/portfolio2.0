@@ -9,8 +9,8 @@ const TechStackContainer = (props: Props) => {
   return (
     <a
       className="group max-w-[6rem] xl:max-w-[8rem] md:max-w-none rounded-xl aspect-square
-    bg-slate-100/50 shadow-2xl shadow-slate-500/30 dark:shadow-slate-700/30 dark:bg-slate-800/50 relative
-    flex items-center justify-center hover:dark:bg-slate-100 duration-300 hover:bg-slate-50 hover:dark:bg-slate-600/30 backdrop-blur-sm md:h-24 h-20 w-auto"
+    bg-slate-100/50 shadow-2xl shadow-slate-500/30 dark:shadow-slate-700/30 dark:bg-slate-800/50 
+    hover:dark:bg-slate-100 duration-300 hover:bg-slate-50 hover:dark:bg-slate-600/30 relative flex items-center justify-center  backdrop-blur-sm md:h-24 h-20 w-auto"
       href={props.data.link}
       target="blank"
     >

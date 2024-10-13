@@ -63,7 +63,7 @@ const ProjectContainer = (props: Props) => {
                 props.data.gradientColorDark && props.data.gradientColorLight
                   ? `font-bold text-xl md:text-2xl xl:text-4xl group-hover:bg-clip-text group-hover:text-transparent ease-in-out
               dark:group-hover:${props.data.gradientColorDark} group-hover:${props.data.gradientColorLight} group-hover:bg-[length:200%_auto] group-hover:animate-gradient pb-2`
-                  : `font-bold text-2xl md:text-3xl xl:text-5xl`
+                  : `font-bold text-xl md:text-2xl xl:text-4xl`
               }
             >
               {props.data.title}

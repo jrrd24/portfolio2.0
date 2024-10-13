@@ -197,7 +197,7 @@ const ProjectsData = [
   },
   {
     id: 6,
-    title: "Portfolio 2.0",
+    title: "Portfolio 2.5",
     employerDescription: undefined,
     description:
       "My personal web portfolio. Built using NextJS 14 and Tailwind. Deployed using Vercel",
@@ -272,7 +272,7 @@ const ProjectsData = [
     gradientColorDark: "bg-gradient-charik-dark",
     gradientColorLight: "bg-gradient-charik-light",
     tags: [
-      { id: 1, name: "ReactJs", Icon: RiNextjsFill, order: 1 },
+      { id: 1, name: "ReactJs", Icon: FaReact, order: 1 },
       { id: 2, name: "Tailwind", Icon: RiTailwindCssFill, order: 2 },
       { id: 3, name: "TypeScript", Icon: BiLogoTypescript, order: 3 },
       { id: 4, name: "Vercel", Icon: IoLogoVercel, order: 4 },
