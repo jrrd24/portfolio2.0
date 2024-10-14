@@ -9,6 +9,8 @@ import WhoAmI from "./sections/WhoAmI";
 import ProjectsRework from "./sections/projects/ProjectsRework";
 import AboutRework from "./sections/AboutRework";
 import AboutMe from "./sections/aboutMe/AboutMe";
+import HeroRework from './sections/hero/HeroRework';
+import ShowcaseProjects from "./sections/showcaseProjects/ShowcaseProjects";
 
 export const metadata: Metadata = {
   title: "Jerard Pagalilauan",
@@ -23,22 +25,17 @@ export default function Home() {
         h-dvh overflow-x-hidden text-custom-dark dark:text-custom-white font-poppins "
       >
         <Navbar />
-        <div id="home" className="grid lg:grid-cols-2 w-screen ">
-          <div
-            className=" w-full lg:col-start-1  lg:col-span-11 2xl:col-span-12 lg:col-end-11 2xl:col-end-12 
-            flex flex-col items-center justify-items-center"
-          >
-            <Hero />
+        <div id="home" className="w-screen">
+            <HeroRework/>
+            <ShowcaseProjects/>
+            {/* <Hero /> */}
             {/* <WhoAmI /> */}
             <AboutMe />
             <ProjectsRework />
             {/* <AboutRework /> */}
             <Contact />
             <Footer />
-          </div>
-          <div className="lg:col-start-11 lg:col-end-12 w-20 ">
-            <Sidebar />
-          </div>
+         
         </div>
       </main>
     </ThemeProvider>

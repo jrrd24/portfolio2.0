@@ -8,11 +8,6 @@ const CircleDesigns = () => {
         className="rounded-full bg-radial-circle from-custom-red/40 dark:from-custom-red/80 from-0% via-custom-red/20 dark:via-custom-red/30 via-25% to-transparent to-70% 
        h-[64rem] w-[32rem] md:h-[64rem] md:w-[48rem] blur-3xl absolute top-[-32rem] left-[-12rem] lg:left-[0rem] z-[0] dark:block hidden"
       />
-      {/* Top Circle - Purple*/}
-      <div
-        className="rounded-t-full rounded-b-none bg-radial-circle from-custom-purple/60 dark:from-custom-purple/40 from-0% via-custom-purple/50 dark:via-custom-purple/30 via-25% to-transparent to-70% 
-            h-[16rem] w-[32rem] md:h-[24rem] md:w-[48rem] blur-3xl absolute top-[-32rem] left-[-20rem] lg:left-[-16rem] z-0 "
-      />
       {/* Bottom Circle - Purple*/}
       <div
         className="rounded-t-full rounded-b-none bg-radial-circle from-custom-purple/60 dark:from-custom-purple/40 from-0% via-custom-purple/50 dark:via-custom-purple/30 via-25% to-transparent to-70% 
