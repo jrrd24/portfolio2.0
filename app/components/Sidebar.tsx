@@ -16,18 +16,18 @@ function Sidebar({}: Props) {
         </li>
         <li>
           <Link
-            href="#projects"
-            className="hover:bg-clip-text hover:text-transparent hover:bg-gradient-flow hover:bg-[length:200%_auto] hover:animate-gradient transition-all duration-300 "
-          >
-            Projects
-          </Link>
-        </li>
-        <li>
-          <Link
             href="#about"
             className="hover:bg-clip-text hover:text-transparent hover:bg-gradient-flow hover:bg-[length:200%_auto] hover:animate-gradient transition-all duration-300 "
           >
             About
+          </Link>
+        </li>
+        <li>
+          <Link
+            href="#projects"
+            className="hover:bg-clip-text hover:text-transparent hover:bg-gradient-flow hover:bg-[length:200%_auto] hover:animate-gradient transition-all duration-300 "
+          >
+            Projects
           </Link>
         </li>
         <li>

@@ -9,7 +9,7 @@ import AchievementContainer from "@/app/sections/aboutMe/components/AchievementC
 
 const AboutMe = () => {
   return (
-    <section className="container relative">
+    <section id="about" className="container relative">
       <div className="md:my-48 my-24">
         <div className="grid md:grid-cols-3 grid-cols-1 gap-8 xl:px-16 px-8 ">
           {/**About Me */}
