@@ -32,7 +32,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning={true}>
       <head>
         <link
           rel="icon"
@@ -63,6 +63,7 @@ export default function RootLayout({
       </head>
       <body
         className={`${poppins.variable} relative min-h-dvh bg-custom-white-dark dark:bg-custom-dark`}
+        suppressHydrationWarning={true}
       >
         {children}
         <Analytics />

@@ -12,7 +12,7 @@ const Footer = (props: Props) => {
           <span className="text-transparent bg-gradient-flow bg-[length:200%_auto] animate-gradient bg-clip-text font-bold text-base">
             <span>Jerard Pagalilauan’s</span>
           </span>{" "}
-          Web Portfolio v2.0
+          Web Portfolio v2.5
         </div>
         <div className=" text-xs lg:text-sm">© {year} Jerard Pagalilauan</div>
       </div>

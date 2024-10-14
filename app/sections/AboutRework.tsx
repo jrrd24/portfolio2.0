@@ -1,12 +1,12 @@
 import React from "react";
 import TextInfiniteScroll from "../components/TextInfiniteScroll";
 import AboutSectionTitle from "../components/AboutSectionTitle";
-import AchievementContainer from "../components/AchievementContainer";
+import AchievementContainer from "./aboutMe/components/AchievementContainer";
 import AchivementData from "../data/AchievementData";
 import TechStackData from "../data/TechStackData";
 import TechStackContainer from "../components/TechStackContainer";
 import ExperienceData from "../data/ExperienceData";
-import ExperienceContainer from "../components/About/ExperienceContainer";
+import ExperienceContainer from "./aboutMe/components/ExperienceContainer";
 
 type Props = {};
 
@@ -24,7 +24,7 @@ const AboutRework = (props: Props) => {
       />
 
       {/**Title */}
-      <div
+      {/* <div
         id="about"
         className="mt-32 md:mt-48 lg:mt-72 flex items-center w-full flex-col z-20"
       >
@@ -33,27 +33,27 @@ const AboutRework = (props: Props) => {
           color="text-custom-red"
           colorDark="text-custom-red-dark"
         />
-      </div>
+      </div> */}
 
       <div className="px-8  mt-16 md:mt-32 w-full">
         <div className="flex flex-col md:gap-24 items-center md:px-4 lg:px-12 z-20 relative">
           {/**Professional Experience */}
-          <div className="flex flex-col items-center">
+          {/* <div className="flex flex-col items-center">
             <AboutSectionTitle title="My Professional Experience" />
             {ExperienceData?.sort((a, b) => a.order - b.order).map((data) => (
               <ExperienceContainer key={data.id} data={data} />
             ))}
-          </div>
+          </div> */}
 
           {/**Achievements */}
-          <div className="flex flex-col items-center mt-16 md:mt-32  gap-8 md:gap-16 mb-8">
+          {/* <div className="flex flex-col items-center mt-16 md:mt-32  gap-8 md:gap-16 mb-8">
             <AboutSectionTitle title="My Achievements" />
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
               {AchivementData.sort((a, b) => a.order - b.order).map((data) => (
                 <AchievementContainer key={data.id} data={data} />
               ))}
             </div>
-          </div>
+          </div> */}
 
           {/**Tech Stack */}
           <div className="flex flex-col items-center mt-16 md:mt-32 gap-8 md:gap-16">

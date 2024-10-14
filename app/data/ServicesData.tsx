@@ -11,7 +11,7 @@ const ServicesData = [
   },
   {
     id: 3,
-    name: "Desktop App Developer",
+    name: "Software Developer",
     order: 3,
   },
 ];

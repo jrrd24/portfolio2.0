@@ -87,6 +87,7 @@ function Hero({}: Props) {
           </div>
         </div>
       </div>
+
       <Particles
         className="absolute inset-0"
         quantity={100}

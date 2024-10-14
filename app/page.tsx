@@ -6,8 +6,9 @@ import Sidebar from "./components/Sidebar";
 import Contact from "./sections/Contact";
 import Footer from "./components/Footer";
 import WhoAmI from "./sections/WhoAmI";
-import ProjectsRework from "./sections/ProjectsRework";
+import ProjectsRework from "./sections/projects/ProjectsRework";
 import AboutRework from "./sections/AboutRework";
+import AboutMe from "./sections/aboutMe/AboutMe";
 
 export const metadata: Metadata = {
   title: "Jerard Pagalilauan",
@@ -28,9 +29,10 @@ export default function Home() {
             flex flex-col items-center justify-items-center"
           >
             <Hero />
-            <WhoAmI />
+            {/* <WhoAmI /> */}
+            <AboutMe />
             <ProjectsRework />
-            <AboutRework />
+            {/* <AboutRework /> */}
             <Contact />
             <Footer />
           </div>

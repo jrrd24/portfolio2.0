@@ -5,34 +5,71 @@ const {
   default: flattenColorPalette,
 } = require("tailwindcss/lib/util/flattenColorPalette");
 
+//for dynamic colors
+const tailwindColors = [
+  "gray",
+  "blue",
+  "indigo",
+  "violet",
+  "purple",
+  "pink",
+  "red",
+  "orange",
+  "yellow",
+  "green",
+  "teal",
+  "cyan",
+  "sky",
+  "stone",
+  "zinc",
+];
+
+const tailwindVariants = ["group-hover"];
+
+const safelistPatterns = [];
+
+for (const color of tailwindColors) {
+  for (const variant of tailwindVariants) {
+    for (let i = 100; i <= 900; i += 100) {
+      safelistPatterns.push({
+        pattern: new RegExp(`shadow-${color}-${i}/50`),
+        variants: [variant],
+      });
+    }
+  }
+}
+
 const config: Config = {
   content: [
     "./node_modules/flowbite-react/lib/**/*.js",
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/**/*.{ts,tsx}"
-	],  
-  darkMode:'class',
-  safelist:[
-    'group-hover:bg-gradient-kaya-light',
-    'dark:group-hover:bg-gradient-kaya-dark',
-    'group-hover:bg-gradient-scaleup-light',
-    'dark:group-hover:bg-gradient-scaleup-dark',
-    'group-hover:bg-gradient-lokal360-light',
-    'dark:group-hover:bg-gradient-lokal360-dark',
-    'group-hover:bg-gradient-printToScale-light',
-    'dark:group-hover:bg-gradient-printToScale-dark',
-    'group-hover:bg-gradient-mtmc-light',
-    'dark:group-hover:bg-gradient-mtmc-dark',
-    'group-hover:bg-gradient-portfolio2-light',
-    'dark:group-hover:bg-gradient-portfolio2-dark',
-    'group-hover:bg-gradient-osaka-light',
-    'dark:group-hover:bg-gradient-osaka-dark',
-    'group-hover:bg-gradient-charik-light',
-    'dark:group-hover:bg-gradient-charik-dark'
+    "./src/**/*.{ts,tsx}",
   ],
-  
+  darkMode: "class",
+  safelist: [
+    "group-hover:bg-gradient-kaya-light",
+    "dark:group-hover:bg-gradient-kaya-dark",
+    "group-hover:bg-gradient-scaleup-light",
+    "dark:group-hover:bg-gradient-scaleup-dark",
+    "group-hover:bg-gradient-lokal360-light",
+    "dark:group-hover:bg-gradient-lokal360-dark",
+    "group-hover:bg-gradient-printToScale-light",
+    "dark:group-hover:bg-gradient-printToScale-dark",
+    "group-hover:bg-gradient-mtmc-light",
+    "dark:group-hover:bg-gradient-mtmc-dark",
+    "group-hover:bg-gradient-portfolio2-light",
+    "dark:group-hover:bg-gradient-portfolio2-dark",
+    "group-hover:bg-gradient-osaka-light",
+    "dark:group-hover:bg-gradient-osaka-dark",
+    "group-hover:bg-gradient-charik-light",
+    "dark:group-hover:bg-gradient-charik-dark",
+
+    // For dynamic colors
+    ...safelistPatterns,
+  ],
+
   prefix: "",
   theme: {
     container: {
@@ -43,25 +80,43 @@ const config: Config = {
     },
     extend: {
       backgroundImage: {
-        'radial-circle': 'radial-gradient(circle at center, var(--tw-gradient-stops))',
-        'gradient-flow': 'linear-gradient(to right, #F3A07D, #E96479, #7D6188, #7D6188, #E96479, #F3A07D)',
+        "radial-circle":
+          "radial-gradient(circle at center, var(--tw-gradient-stops))",
+        "gradient-flow":
+          "linear-gradient(to right, #F3A07D, #E96479, #737AC1, #737AC1, #E96479, #F3A07D)",
         //Projects Gradients
-        'gradient-kaya-dark': 'linear-gradient(to right, #F8F8FF, #F8F8FF, #22C55E, #22C55E, #F8F8FF, #F8F8FF)',
-        'gradient-kaya-light': 'linear-gradient(to right, #1B1B1F, #1B1B1F, #22C55E, #22C55E, #1B1B1F, #1B1B1F)',
-        'gradient-scaleup-dark': 'linear-gradient(to right, #F8F8FF, #F8F8FF, #E84545, #E84545, #F8F8FF, #F8F8FF)',
-        'gradient-scaleup-light': 'linear-gradient(to right, #1B1B1F, #1B1B1F, #E84545, #E84545, #1B1B1F, #1B1B1F)',
-        'gradient-lokal360-dark': 'linear-gradient(to right, #F8F8FF, #F8F8FF, #6D5FDF, #6D5FDF, #F8F8FF, #F8F8FF)',
-        'gradient-lokal360-light': 'linear-gradient(to right, #1B1B1F, #1B1B1F, #6D5FDF, #6D5FDF, #1B1B1F, #1B1B1F)',
-        'gradient-printToScale-dark': 'linear-gradient(to right, #F8F8FF, #F8F8FF, #48A26A, #48A26A, #F8F8FF, #F8F8FF)',
-        'gradient-printToScale-light': 'linear-gradient(to right, #1B1B1F, #1B1B1F, #006D3A, #006D3A, #1B1B1F, #1B1B1F)',
-        'gradient-mtmc-dark': 'linear-gradient(to right, #F8F8FF, #F8F8FF, #8C5E87, #8C5E87, #F8F8FF, #F8F8FF)',
-        'gradient-mtmc-light': 'linear-gradient(to right, #1B1B1F, #1B1B1F, #6E1269, #6E1269, #1B1B1F, #1B1B1F)',
-        'gradient-portfolio2-dark': 'linear-gradient(to right, #F8F8FF, #F8F8FF, #F3A07D, #F3A07D, #F8F8FF, #F8F8FF)',
-        'gradient-portfolio2-light': 'linear-gradient(to right, #1B1B1F, #1B1B1F, #F3A07D, #F3A07D, #1B1B1F, #1B1B1F)',        
-        'gradient-osaka-dark': 'linear-gradient(to right, #F8F8FF, #F8F8FF, #056839, #056839, #F8F8FF, #F8F8FF)',
-        'gradient-osaka-light': 'linear-gradient(to right, #1B1B1F, #1B1B1F, #056839, #056839, #1B1B1F, #1B1B1F)',
-        'gradient-charik-dark': 'linear-gradient(to right, #F8F8FF, #F8F8FF, #FF7C57, #FF7C57 , #F8F8FF, #F8F8FF)',
-        'gradient-charik-light': 'linear-gradient(to right, #1B1B1F, #1B1B1F, #FF7C57, #FF7C57, #1B1B1F, #1B1B1F)'
+        "gradient-kaya-dark":
+          "linear-gradient(to right, #F8F8FF, #F8F8FF, #22C55E, #22C55E, #F8F8FF, #F8F8FF)",
+        "gradient-kaya-light":
+          "linear-gradient(to right, #1B1B1F, #1B1B1F, #22C55E, #22C55E, #1B1B1F, #1B1B1F)",
+        "gradient-scaleup-dark":
+          "linear-gradient(to right, #F8F8FF, #F8F8FF, #E84545, #E84545, #F8F8FF, #F8F8FF)",
+        "gradient-scaleup-light":
+          "linear-gradient(to right, #1B1B1F, #1B1B1F, #E84545, #E84545, #1B1B1F, #1B1B1F)",
+        "gradient-lokal360-dark":
+          "linear-gradient(to right, #F8F8FF, #F8F8FF, #6D5FDF, #6D5FDF, #F8F8FF, #F8F8FF)",
+        "gradient-lokal360-light":
+          "linear-gradient(to right, #1B1B1F, #1B1B1F, #6D5FDF, #6D5FDF, #1B1B1F, #1B1B1F)",
+        "gradient-printToScale-dark":
+          "linear-gradient(to right, #F8F8FF, #F8F8FF, #48A26A, #48A26A, #F8F8FF, #F8F8FF)",
+        "gradient-printToScale-light":
+          "linear-gradient(to right, #1B1B1F, #1B1B1F, #006D3A, #006D3A, #1B1B1F, #1B1B1F)",
+        "gradient-mtmc-dark":
+          "linear-gradient(to right, #F8F8FF, #F8F8FF, #8C5E87, #8C5E87, #F8F8FF, #F8F8FF)",
+        "gradient-mtmc-light":
+          "linear-gradient(to right, #1B1B1F, #1B1B1F, #6E1269, #6E1269, #1B1B1F, #1B1B1F)",
+        "gradient-portfolio2-dark":
+          "linear-gradient(to right, #F8F8FF, #F8F8FF, #F3A07D, #F3A07D, #F8F8FF, #F8F8FF)",
+        "gradient-portfolio2-light":
+          "linear-gradient(to right, #1B1B1F, #1B1B1F, #F3A07D, #F3A07D, #1B1B1F, #1B1B1F)",
+        "gradient-osaka-dark":
+          "linear-gradient(to right, #F8F8FF, #F8F8FF, #056839, #056839, #F8F8FF, #F8F8FF)",
+        "gradient-osaka-light":
+          "linear-gradient(to right, #1B1B1F, #1B1B1F, #056839, #056839, #1B1B1F, #1B1B1F)",
+        "gradient-charik-dark":
+          "linear-gradient(to right, #F8F8FF, #F8F8FF, #FF7C57, #FF7C57 , #F8F8FF, #F8F8FF)",
+        "gradient-charik-light":
+          "linear-gradient(to right, #1B1B1F, #1B1B1F, #FF7C57, #FF7C57, #1B1B1F, #1B1B1F)",
       },
       colors: {
         border: "hsl(var(--border))",
@@ -97,28 +152,30 @@ const config: Config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        'transparent':'transparent',
-        'custom-white':{
-          DEFAULT:'#F2F3F4',
-          dark:'#E3E3E3'
+        transparent: "transparent",
+        "custom-white": {
+          DEFAULT: "#F2F3F4",
+          dark: "#E3E3E3",
         },
-        'custom-dark':{
-          light:'#181818',
-          DEFAULT:'#1B1B1F',
+        "custom-dark": {
+          light: "#181818",
+          DEFAULT: "#454555",
         },
-        'custom-orange':{
-          DEFAULT:'#F3A07D',
-          dark:'#E19865'
+        "custom-orange": {
+          DEFAULT: "#F3A07D",
+          dark: "#E19865",
         },
-        'custom-red':{
-          DEFAULT:'#E96479',
-          dark:'#C45258'
+        "custom-red": {
+          DEFAULT: "#E96479",
+          dark: "#C45258",
         },
-        'custom-purple':'#7D6188',
-        'custom-gray':{
-          DEFAULT:'#AAA9AD',
-          dark:'#A4A4A5'
+        // 'custom-purple':'#7D6188',
+        "custom-purple": "#737AC1",
+        "custom-gray": {
+          DEFAULT: "#AAA9AD",
+          dark: "#A4A4A5",
         },
+        "custom-color": "var(--custom-color)",
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
@@ -137,16 +194,16 @@ const config: Config = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
-        'gradient': {
-          to: { 'background-position': '200% center' },
+        gradient: {
+          to: { "background-position": "200% center" },
         },
-        'infinite-scroll': {
-          from: { transform: 'translateX(0)' },
-          to: { transform: 'translateX(-100%)' },
+        "infinite-scroll": {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(-100%)" },
         },
-        'infinite-scroll-slow': {
-          from: { transform: 'translateX(0)' },
-          to: { transform: 'translateX(-100%)' },
+        "infinite-scroll-slow": {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(-100%)" },
         },
         grid: {
           "0%": { transform: "translateY(-50%)" },
@@ -170,39 +227,43 @@ const config: Config = {
           to: {
             transform: "translate(calc(100cqw - 100%), 0)",
           },
-        }
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        'gradient': 'gradient 5s linear infinite',
-        'infinite-scroll': 'infinite-scroll 50s linear infinite',
-        'infinite-scroll-slow': 'infinite-scroll 100s linear infinite',
-        'grid': "grid 15s linear infinite",
+        gradient: "gradient 8s linear infinite",
+        "infinite-scroll": "infinite-scroll 50s linear infinite",
+        "infinite-scroll-slow": "infinite-scroll 100s linear infinite",
+        grid: "grid 15s linear infinite",
         "spin-around": "spin-around calc(var(--speed) * 2) infinite linear",
         slide: "slide var(--speed) ease-in-out infinite alternate",
       },
-      screens:{
-        '2xl': '1400px',
+      screens: {
+        "2xl": "1400px",
       },
 
       letterSpacing: {
-        tightest: '-.099em',
-      }
+        tightest: "-.099em",
+      },
     },
   },
-  plugins: [require("tailwindcss-animate"),addVariablesForColors, require("flowbite/plugin")],
-} satisfies Config
+  plugins: [
+    require("tailwindcss-animate"),
+    addVariablesForColors,
+    require("flowbite/plugin"),
+  ],
+} satisfies Config;
 
 function addVariablesForColors({ addBase, theme }: any) {
   let allColors = flattenColorPalette(theme("colors"));
   let newVars = Object.fromEntries(
     Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
   );
- 
+
   addBase({
     ":root": newVars,
   });
 }
 
-export default config
+export default config;
