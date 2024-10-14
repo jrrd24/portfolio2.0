@@ -28,10 +28,10 @@ function Hero({}: Props) {
       {/* Content*/}
       <div className=" px-8 w-full lg:h-[85vh] h-[75vh] max-h-[1024px] mt-16 flex justify-between flex-col z-10">
         <div>
-          <div className=" font-bold text-5xl sm:text-6xl lg:text-8xl ">
+          <h1 className=" font-bold text-5xl sm:text-6xl lg:text-8xl ">
             Web <br />
             Developer
-          </div>
+          </h1>
 
           <div
             className="w-[75vw] md:w-[50vw] mt-3 md:mt-6  text-custom-dark-light dark:text-custom-white-dark/60 inline-flex

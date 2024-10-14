@@ -23,9 +23,7 @@ const ProjectsRework = (props: Props) => {
 
           {/**Sub-title*/}
           <p>Explore Some of My Previous Work</p>
-          <p className=" text-custom-orange dark:text-custom-orange-dark">
-            ✗✗✗
-          </p>
+          <p className=" ">✗✗✗</p>
         </div>
         <div className="px-8 mt-16 md:mt-32 w-full flex flex-col items-center z-10 gap-16">
           {showMore
