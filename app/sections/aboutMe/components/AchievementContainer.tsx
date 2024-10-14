@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import Tag from "../Tag";
+import Tag from "../../../components/Tag";
 
 type Props = {
   data: Data;
@@ -20,18 +20,18 @@ const AchievementContainer = (props: Props) => {
       <div className="w-full flex lg:justify-center lg:w-[10%]">
         {" "}
         {props.data.Icon && (
-          <props.data.Icon className="lg:max-h-8 max-h-7 aspect-square h-auto group-hover:text-custom-orange group-hover:lg:max-h-9 transition-all duration-300 " />
+          <props.data.Icon className="lg:max-h-8 max-h-7 aspect-square h-auto group-hover:text-custom-orange group-hover:scale-110 scale-100 transition-transform transition-300 " />
         )}
       </div>
 
-      <h1 className="text-md md:text-lg font-bold leading-snug md:leading-snug w-full lg:w-[60%]">
+      <h1 className="text-lg md:text-xl font-bold leading-snug md:leading-snug w-full lg:w-[60%]">
         {props.data.title}{" "}
-        <span className="text-custom-orange dark:text-custom-orange-dark">
+        <span className="text-custom-purple text-sm md:text-base">
           {" "}
           - {props.data.result}
         </span>
       </h1>
-      <p className=" lg:text-right text-sm md:text-base text-custom-dark-light/60 dark:text-custom-white-dark/60 w-full lg:w-[30%]">
+      <p className=" lg:text-right text-xs md:text-sm text-custom-dark-light/60 dark:text-custom-white-dark/60 w-full lg:w-[30%]">
         {props.data.date}
       </p>
     </div>

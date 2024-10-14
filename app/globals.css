@@ -111,7 +111,7 @@ body {
 
 @layer components {
   .bg-container {
-    @apply transition-all rounded-xl w-full p-8 z-10 bg-white hover:shadow-xl shadow-2xl shadow-slate-500/30 dark:shadow-slate-700/40 dark:bg-slate-800/30 hover:dark:bg-slate-100 duration-300 hover:bg-slate-50 hover:dark:bg-slate-600/20;
+    @apply transition-all rounded-xl w-full p-8 z-10 bg-white hover:shadow-xl shadow-2xl shadow-slate-500/30 dark:shadow-slate-700/40 dark:bg-slate-800/30 duration-300 hover:bg-slate-50 hover:dark:bg-slate-600/20;
   }
 }
 
@@ -130,13 +130,13 @@ body {
 
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: #7D6188;
+    background: #737AC1;
     border-radius: 5px;
   }
 
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: #9A7CA5;
+    background: #68645C;
   }
 }
 

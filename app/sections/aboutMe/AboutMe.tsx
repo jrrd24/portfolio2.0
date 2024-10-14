@@ -1,11 +1,11 @@
 import React from "react";
 import CircleDesigns from "./CircleDesigns";
 import AboutSectionTitle from "@/app/components/AboutSectionTitle";
-import ExperienceContainer from "@/app/components/About/ExperienceContainer";
+import ExperienceContainer from "@/app/sections/aboutMe/components/ExperienceContainer";
 import ExperienceData from "@/app/data/ExperienceData";
 import Link from "next/link";
 import AchivementData from "@/app/data/AchievementData";
-import AchievementContainer from "@/app/components/About/AchievementContainer";
+import AchievementContainer from "@/app/sections/aboutMe/components/AchievementContainer";
 
 const AboutMe = () => {
   return (
@@ -19,13 +19,17 @@ const AboutMe = () => {
             </h1>
             <p className="text-sm md:text-base max-w-[700px]">
               A highly innovative and motivated graduate of{" "}
-              <span className="font-bold text-custom-purple">
+              <span className="font-bold ">
                 Bachelor of Science in Information Technology
               </span>{" "}
               with rich experience in working with clients and collaborators in
-              developing <span className=" text-custom-red dark:text-custom-red-dark font-bold">Web and Desktop Systems</span>. Currently seeking to join the
-              IT industry as a web developer to improve his skills, learn new
-              technologies, and become a productive member of a company.{" "}
+              developing{" "}
+              <span className=" font-bold text-custom-purple">
+                Web and Desktop Systems
+              </span>
+              . Currently seeking to join the IT industry as a web developer to
+              improve his skills, learn new technologies, and become a
+              productive member of a company.{" "}
             </p>
 
             <Link
@@ -58,8 +62,17 @@ const AboutMe = () => {
 
           {/**Work Experience */}
           <div className="bg-container md:col-span-3 col-1 grid lg:grid-cols-3 grid-cols-1 gap-8   ">
-            <div className="col-1 flex items-center  text-4xl lg:text-5xl text-custom-purple font-bold">
-              Work Experience
+            <div className="col-1 flex flex-col gap-2 md:gap-4  justify-center  text-2xl lg:text-4xl  ">
+              <h1 className="font-bold">
+                Work <br />{" "}
+                <span className=" text-custom-purple"> Experience</span>
+              </h1>
+              <p className="text-sm md:text-base max-w-[300px]">
+                Take a peek at my professional journey.
+              </p>
+              <p className="text-base md:text-lg max-w-[700px] select-none">
+                ✗✗✗
+              </p>
             </div>
 
             <div className=" col-span-2 col-1 flex items-center justify-center">
@@ -75,8 +88,18 @@ const AboutMe = () => {
 
           {/**Notable Achievements */}
           <div className="bg-container md:col-span-3 col-1 grid lg:grid-cols-3 grid-cols-1 gap-8  ">
-            <div className="col-1 flex items-center  text-4xl lg:text-5xl text-custom-purple font-bold">
-              Notable Achievements
+            <div className="col-1 flex flex-col gap-2 md:gap-4 justify-center  text-2xl lg:text-4xl  ">
+              <h1 className="font-bold">
+                Notable <br />{" "}
+                <span className=" text-custom-purple"> Achievements</span>
+              </h1>
+              <p className="text-sm md:text-base max-w-[300px]">
+                Celebrating past accomplishments. Working towards bigger
+                things...
+              </p>
+              <p className="text-base md:text-lg max-w-[700px] select-none">
+                ✗✗✗
+              </p>
             </div>
 
             <div className=" col-span-2 col-1 flex items-center justify-center">

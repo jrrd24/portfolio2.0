@@ -1,12 +1,12 @@
 import React from "react";
 import TextInfiniteScroll from "../components/TextInfiniteScroll";
 import AboutSectionTitle from "../components/AboutSectionTitle";
-import AchievementContainer from "../components/About/AchievementContainer";
+import AchievementContainer from "./aboutMe/components/AchievementContainer";
 import AchivementData from "../data/AchievementData";
 import TechStackData from "../data/TechStackData";
 import TechStackContainer from "../components/TechStackContainer";
 import ExperienceData from "../data/ExperienceData";
-import ExperienceContainer from "../components/About/ExperienceContainer";
+import ExperienceContainer from "./aboutMe/components/ExperienceContainer";
 
 type Props = {};
 
