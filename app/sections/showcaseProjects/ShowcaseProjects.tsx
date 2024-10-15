@@ -17,8 +17,8 @@ const ShowcaseProjects = () => {
       <div className="group relative">
         <Image
           src={"/assets/projects/showcase/Lokal360Redesign.png"}
-          width={400}
-          height={200}
+          width={1280}
+          height={720}
           alt={"Thumbnail"}
           className={`object-cover aspect-video w-full xl:w-[56rem]  md:w-[80vw]  object-right-top   
         rounded-2xl  ease-linear  pointer-events-none select-none border-2 border-custom-dark dark:border-custom-white-dark
