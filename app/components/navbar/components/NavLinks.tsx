@@ -18,6 +18,7 @@ const NavLinks = ({handleMenuChange}:Props) => {
     <ul className="w-full flex flex-col lg:flex-row items-center space-y-6  lg:space-x-8 lg:space-y-0 font-bold lg:pt-2">
         {links.map((data)=>(   
             <Link 
+                key={data.id}
                 href={data.href || ""}
                 className={cn("select-none custom-link ")}
                 onClick={()=>handleMenuChange}
