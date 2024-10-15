@@ -12,14 +12,14 @@ const HeroRework = () => {
       />
 
       <div className="flex gap-2 flex-col h-full container items-center justify-center px-4 md:px-8 py-16 md:py-20 mt-4 lg:mt-8">
-          <h1 className=" text-5xl sm:text-6xl lg:text-8xl font-bold py-1 ">
+          <h1 className=" text-5xl sm:text-6xl lg:text-8xl font-bold py-1 lg:translate-x-[-1.25rem] translate-x-[-1rem]">
             {"<"} <span className = "font-medium text-6xl sm:text-7xl lg:text-9xl">Jerard</span>
           </h1>
           
           <SpecialtiesScroll/>
 
           <h2 className=" font-bold text-5xl sm:text-6xl lg:text-8xl bg-clip-text
-            text-transparent bg-gradient-flow bg-[length:200%_auto] animate-gradient py-2">
+            text-transparent bg-gradient-flow bg-[length:200%_auto] animate-gradient py-2  md:translate-x-[1rem]">
             Pagalilauan {"/>"}
           </h2>
       </div>
