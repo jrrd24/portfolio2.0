@@ -18,7 +18,7 @@ const ExperienceData = [
     accentColor: "pink-400",
     company: "Metro Tuguegarao Multi-Purpose Cooperative",
     job: "Software Developer",
-    duration: "Dec 2023 - Aug 2024",
+    duration: "Aug 2023 - Aug 2024",
     description:"Co-designed and developed a task management desktop application for a client cooperative, streamlining their workflow and boosting efficiency.",
     order: 1,
   },
