@@ -16,7 +16,7 @@ const Navbar = () => {
       <div className="container px-8 flex justify-between items-center z-40 h-16">
         <a
           href="/#home"
-          className=" text-xl lg:text-3xl bg-gradient-to-tr from-custom-orange via-custom-red to-custom-purple bg-clip-text text-transparent font-medium"
+          className=" text-2xl lg:text-3xl bg-gradient-to-tr from-custom-orange via-custom-red to-custom-purple bg-clip-text text-transparent font-medium"
         >
           jp
         </a>

@@ -21,12 +21,12 @@ const ShowcaseProjects = () => {
           height={200}
           alt={"Thumbnail"}
           className={`object-cover aspect-video w-full xl:w-[56rem]  md:w-[80vw]  object-right-top   
-        rounded-2xl  ease-linear  pointer-events-none select-none border-2 border-custom-dark 
+        rounded-2xl  ease-linear  pointer-events-none select-none border-2 border-custom-dark dark:border-custom-white-dark
         group-hover:translate-y-[-0.5rem] group-hover:translate-x-[-0.5rem] transition-all duration-200`}
         />
 
         <div  className={`absolute top-0 object-cover aspect-video w-full xl:w-[56rem]  md:w-[80vw]  object-right-top   
-            rounded-2xl  ease-linear pointer-events-none select-none border-2 border-custom-dark z-[-2]
+            rounded-2xl  ease-linear pointer-events-none select-none border-2 border-custom-dark dark:border-custom-white-dark z-[-2]
             group-hover:translate-x-2 group-hover:translate-y-2  transition-all duration-200  `}/>
 
         <p className="text-sm lg:text-base max-w-[300px] md:block hidden mt-6 ">
@@ -42,12 +42,12 @@ const ShowcaseProjects = () => {
             height={200}
             alt={"Thumbnail"}
             className={`aspect-video object-cover xl:w-[32rem]  sm:w-[56vw] w-[20rem] object-right-top   
-            rounded-2xl  ease-linear pointer-events-none select-none border-2 border-custom-dark
+            rounded-2xl  ease-linear pointer-events-none select-none border-2 border-custom-dark dark:border-custom-white-dark
             group-hover:translate-y-[-0.5rem] group-hover:translate-x-[-0.5rem] transition-all duration-200`}
           />
 
           <div  className={`absolute top-0 aspect-video object-cover xl:w-[32rem]  sm:w-[56vw] w-[20rem] object-right-top   
-            rounded-2xl  ease-linear pointer-events-none select-none border-2 border-custom-dark z-[-2]
+            rounded-2xl  ease-linear pointer-events-none select-none border-2 border-custom-dark dark:border-custom-white-dark z-[-2]
             group-hover:translate-x-2 group-hover:translate-y-2  transition-all duration-200  `}/>
 
           
