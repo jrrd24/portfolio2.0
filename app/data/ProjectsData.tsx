@@ -172,7 +172,7 @@ const ProjectsData = [
     id: 5,
     title: "MTMC Mgmt System",
     employerDescription:
-      "A Freelance Project for the Metro Tuguegarao Multi-Purpose Cooperative.",
+      "A Project for the Metro Tuguegarao Multi-Purpose Cooperative.",
     description:
       "A management system for the day-to-day tasks of the cooperative.",
     thumbnail: "/assets/projects/thumbnail/coop_thumbnail.png",
